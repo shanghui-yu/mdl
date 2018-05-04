@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>offer弹窗</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<link rel="stylesheet" href="../../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../css/publick.css">
+</head>
+
+<body>
+	<div class="ceshi-btn">
+		<button class="btn btn-primary" data-toggle="modal" data-target="#myModal_1">9选择已有的积分规则复制</button>
+		<button class="btn btn-primary" data-toggle="modal" data-target="#myModal_2">10确认积分规则_整单满额</button>
+		<button class="btn btn-info" data-toggle="modal" data-target="#myModal_3">10确认积分规则_导入</button>
+		<button class="btn btn-info" data-toggle="modal" data-target="#myModal_4">11确认积分规则_单品标准</button>
+		<button class="btn btn-success" data-toggle="modal" data-target="#myModal_5">12创建成功</button>
+	</div>
+	<!-- 9选择已有的积分规则复制 -->
+	<div class="modal fade global-modal" id="myModal_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body clearfix">
+					<button class="close" data-dismiss="modal">关</button>
+					<h3 class="title">选择已有的积分规则进行复制</h3>
+					<form action="" class="filter-forms">
+						<label>类型：</label>
+						<div class="select-imitate changeTemplate" id="">
+							<ul class="dropdown-nav">
+								<li class="select-item-radio" data-viewid="2">类型1</li>
+								<li class="select-item-radio" data-viewid="3">类型2</li>
+							</ul>
+							<span class="dropdown-toggle">类型1</span>
+							<span class="right-btn">
+								<i class="up">上</i>
+								<i class="down">下</i>
+							</span>
+						</div>
+						<div class="right">
+							<input type="text" placeholder="搜索ID/规则名称/产品编码/产品名称">
+							<button type="search" class="yello-btn">搜索</button>
+						</div>
+					</form>
+					<div class="similarity-table model-table">
+						<div class="thead">
+							<div style="width:110px" class="th">
+								<span>ID</span>
+							</div>
+							<!-- 如果需要有选中效果的话 就在div里面加一个button class为marketing-btn -->
+							<div style="width:520px" class="th">
+								<span class="marketing-btn">积分规则名称</span>
+							</div>
+							<div style="width:220px" class="th">
+								<span>类型</span>
+							</div>
+							<div class="th">
+								<span>积分描述</span>
+							</div>
+						</div>
+						<div class="tbody">
+							<table class="table table-hover table-striped" cellspacing="0" cellpadding="0" border="0">
+								<tbody>
+									<tr>
+										<td>CP5643</td>
+										<td>
+											<div class="figure">
+												<img src="https://ccportaldev.crm.mcdonalds.com.cn/WebImageSrc/c09cd878d92f4288b2c143d9ae4924d9.png" alt="">
+											</div>
+											<div class="content"> 2018年1月份注册会员送50积分</div>
+										</td>
+										<td>S－单品标准</td>
+										<td>巨无霸四倍积分</td>
+									</tr>
+									<tr>
+										<td>CP5643</td>
+										<td>
+											<div class="figure">
+												<img src="https://ccportaldev.crm.mcdonalds.com.cn/WebImageSrc/c09cd878d92f4288b2c143d9ae4924d9.png" alt="">
+											</div>
+											<div class="content"> 2018年1月份注册会员送50积分</div>
+										</td>
+										<td>S－单品标准</td>
+										<td>巨无霸四倍积分</td>
+									</tr>
+									<tr>
+										<td>CP5643</td>
+										<td>
+											<div class="figure">
+												<img src="https://ccportaldev.crm.mcdonalds.com.cn/WebImageSrc/c09cd878d92f4288b2c143d9ae4924d9.png" alt="">
+											</div>
+											<div class="content"> 2018年1月份注册会员送50积分</div>
+										</td>
+										<td>S－单品标准</td>
+										<td>巨无霸四倍积分</td>
+									</tr>
+									<tr>
+										<td>CP5643</td>
+										<td>
+											<div class="figure">
+												<img src="https://ccportaldev.crm.mcdonalds.com.cn/WebImageSrc/c09cd878d92f4288b2c143d9ae4924d9.png" alt="">
+											</div>
+											<div class="content"> 2018年1月份注册会员送50积分</div>
+										</td>
+										<td>S－单品标准</td>
+										<td>巨无霸四倍积分</td>
+									</tr>
+									<tr>
+										<td>CP5643</td>
+										<td>
+											<div class="figure">
+												<img src="https://ccportaldev.crm.mcdonalds.com.cn/WebImageSrc/c09cd878d92f4288b2c143d9ae4924d9.png" alt="">
+											</div>
+											<div class="content"> 2018年1月份注册会员送50积分</div>
+										</td>
+										<td>S－单品标准</td>
+										<td>巨无霸四倍积分</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default close-btn" data-dismiss="modal">关闭</button>
+						<button type="button" class="yello-btn" data-dismiss="modal">复制</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 10确认积分规则_整单满额 -->
+	<div class="modal fade get-rule" id="myModal_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body clearfix">
+					<button class="close" data-dismiss="modal">关</button>
+					<h3 class="title">选择已有的积分规则进行复制</h3>
+					<div class="product-img">
+						<img src="http://temp.im/145x145" alt="">
+					</div>
+					<div class="rule-main clearfix">
+						<ul>
+							<li>
+								<span class="name">规则名称：</span>满50元送10积分</li>
+							<li>
+								<span class="name">积分类型：</span>满50元送10积分，不可重复参与，不可叠加使用</li>
+							<li>
+								<span class="name">赠送方式：</span>A－整单满额</li>
+							<li>
+								<span class="name">金额达到：</span>¥50 积分</li>
+							<li>
+								<span class="name">积分类型：</span>积分</li>
+							<li>
+								<span class="name">赠送方式：</span>固定值</li>
+							<li>
+								<span class="name">奖励额度：</span>10</li>
+							<li>
+								<span class="name">发放规则：</span>满X元</li>
+							<li>
+								<span class="name">积分有效期：</span>固定日</li>
+							<li>
+								<span class="name">重复参与：</span>否</li>
+							<li>
+								<span class="name">叠加使用：</span>否</li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default close-btn" data-dismiss="modal">我要返回修改</button>
+					<button type="button" class="yello-btn" data-dismiss="modal">OK，准确无误</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 10确认积分规则_导入 -->
+	<div class="modal fade get-rule" id="myModal_3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body clearfix">
+					<button class="close" data-dismiss="modal">关</button>
+					<h3 class="title">请确认积分规则</h3>
+					<div class="product-img">
+						<img src="http://temp.im/145x145" alt="">
+					</div>
+					<div class="rule-main clearfix">
+						<ul>
+							<li>
+								<span class="name">规则名称：</span>满50元送10积分</li>
+							<li>
+								<span class="name">规则描述：</span>满50元送10积分，不可重复参与，不可叠加使用</li>
+							<li>
+								<span class="name">规则类型：</span>A－整单满额</li>
+							<li>
+								<span class="name">金额达到：</span>¥50 积分</li>
+							<li>
+								<span class="name">积分类型：</span>积分</li>
+							<li>
+								<span class="name">赠送方式：</span>固定值</li>
+							<li>
+								<span class="name">奖励额度：</span>10</li>
+							<li>
+								<span class="name">发放规则：</span>满X元</li>
+							<li>
+								<span class="name">积分有效期：</span>固定日</li>
+							<li>
+								<span class="name">重复参与：</span>否</li>
+							<li>
+								<span class="name">叠加使用：</span>否</li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default close-btn" data-dismiss="modal">取消</button>
+					<button type="button" class="yello-btn" data-dismiss="modal">确定选择使用</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 11确认积分规则_单品标准 -->
+	<div class="modal fade get-rule product-detail-box" id="myModal_4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body clearfix">
+					<button class="close" data-dismiss="modal">关</button>
+					<h3 class="title">请确认积分规则</h3>
+					<div class="product-img">
+						<img src="http://temp.im/145x145" alt="">
+					</div>
+					<div class="rule-main clearfix">
+						<ul>
+							<li>
+								<span class="name">规则名称：</span>满50元送10积分</li>
+							<li>
+								<span class="name">规则描述：</span>满50元送10积分，不可重复参与，不可叠加使用</li>
+							<li>
+								<span class="name">规则类型：</span>A－整单满额</li>
+							<li>
+								<span class="name">金额达到：</span>¥50 积分</li>
+							<li>
+								<span class="name">积分类型：</span>积分</li>
+							<li>
+								<span class="name">赠送方式：</span>固定值</li>
+							<li>
+								<span class="name">奖励额度：</span>10</li>
+							<li>
+								<span class="name">发放规则：</span>满X元</li>
+							<li>
+								<span class="name">积分有效期：</span>固定日</li>
+							<li>
+								<span class="name">重复参与：</span>否</li>
+							<li>
+								<span class="name">叠加使用：</span>否</li>
+
+						</ul>
+					</div>
+					<div class="product-detail">
+						<h3>商品组详情：</h3>
+						<ul>
+							<li><em>64736473</em>圆筒冰淇凌</li>
+							<li><em>1279</em>奥利奥麦旋风</li>
+							<li><em>1279</em>朱古力新地</li>
+							<li><em>1279</em>花生圆筒</li>
+							<li><em>1279</em>草莓新地</li>
+							<li><em>1279</em>草莓麦旋</li>
+							<li><em>1279</em>草莓麻薯新地</li>
+							<li><em>1279</em>加红豆派</li>
+							<li><em>1279</em>加香蕉派</li>
+						</ul>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default close-btn" data-dismiss="modal">取消</button>
+					<button type="button" class="yello-btn" data-dismiss="modal">OK，准确无误</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 12创建成功 -->
+	<div class="modal fade success-model" id="myModal_5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button class="close" data-dismiss="modal">关</button>
+					<img src="../../images/succese.png" alt="" class="success-icon">
+					<p class="des">积分规则 [购甜品满50元送积分]
+						<br> 创建成功</p>
+					<button class="to-next">进入下一步</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+<script src="../../JqQueryBuilder/jquery_1.10.2.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/createCoupon.js"></script>
+
+</html>

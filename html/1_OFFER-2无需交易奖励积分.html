@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>创建优惠券规则</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/timepicker/bootstrap-datetimepicker.min.css">
+	<link href="../css/timepicker/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" media="all" href="../css/timepicker/daterangepicker-bs3.css" />
+	<link rel="stylesheet" type="text/css" href="../css/publick.css">
+	<link rel="stylesheet" type="text/css" href="../css/home.css">
+</head>
+
+<body>
+	<!-- 公共头部1 -->
+	<div class="global-top-navs">
+		<div class="main">
+			<ul class="right-nav">
+				<li>1</li>
+				<li class="active price">奖励配置</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>总览</li>
+			</ul>
+			<div class="left-nav">
+				正在创建活动 [
+				<span class="name">2018年1月_上海_P_注册1月_上海_P_注册.</span>]
+				<div class="time">
+					<em>起止日期：</em>
+					<span>2018.02.22 - 06:30</span> ~
+					<span>2019.02.22 - 06:30</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 公共头部 end -->
+
+	<!-- 奖励配置 -->
+	<div class="containers reward-content" id="container">
+		<h3 class="title">第2步 无需交易奖励积分</h3>
+		<p class="des">请设置积分/积点的类型、分值以及有效期</p>
+		<ul class="no-trade-main">
+			<!-- 错误信息li 添加 类名 err默认不需要-->
+			<li>
+				<span class="lable">
+					<em>*</em>积分类型：</span>
+				<div class="select-imitate" style="width: 400px;">
+					<ul class="dropdown-nav">
+						<li class="select-item-radio selected" data-radiovalue="0">积分</li>
+						<li class="select-item-radio" data-radiovalue="1">金钱</li>
+					</ul>
+					<!-- 选中的value传递到隐藏域里面 错误信息添加class err自动显示错误提示-->
+					<input type="hidden" value="" class="radio-value">
+					<span class="dropdown-toggle">积分</span>
+					<span class="right-btn">
+						<i class="up">上</i>
+						<i class="down">下</i>
+					</span>
+				</div>
+				<div class="message">积分类型不能为空</div>
+			</li>
+			<!-- 错误信息li 添加 类名 err默认不需要-->
+			<li>
+				<span class="lable">
+					<em>*</em>赠送分值：</span>
+				<input type="text" class="text-input fraction" value="">
+				<div class="message">赠送分值不能为空</div>
+			</li>
+			<li>
+				<div class="valid">
+					<span class="lable">
+						<em>*</em>有效期：</span>
+					<div class="select-imitate" style="width: 155px;" id="valid_times">
+						<ul class="dropdown-nav">
+							<li class="select-item-radio selected" data-radiovalue="0" data-viewid="1">固定日期</li>
+							<li class="select-item-radio" data-radiovalue="1" data-viewid="2">固定天数</li>
+						</ul>
+						<!-- 选中的value传递到隐藏域里面 -->
+						<input type="hidden" value="" class="radio-value">
+						<span class="dropdown-toggle">固定日期</span>
+						<span class="right-btn">
+							<i class="up">上</i>
+							<i class="down">下</i>
+						</span>
+					</div>
+				</div>
+				<!-- 固定日期 错误信息fixed-times 添加 err-->
+				<div class="fixed-times" data-changeId="1">
+					<span class="lable days">日期：</span>
+					<div class="input-append">
+						<input class="text-input" type="text" value="2018-03-31" id="fixed_times">
+						<span class="glyphicon glyphicon-calendar"></span>
+					</div>
+					<div class="message">日期不能为空</div>
+				</div>
+				<!-- 固定天数 错误信息fixed-day添加 err-->
+				<div class="fixed-day" data-changeId="2">
+					<span class="lable days">天数：</span>
+					<input type="number" name="" value="1" class="text-input fraction" style="width: 178px;">
+					<div class="message">天数不能为空</div>
+				</div>
+			</li>
+			<!-- 错误信息update-img-box添加 err -->
+			<li class="update-img-box err">
+				<span class="lable">
+					<em>*</em>上传积分图片：</span>
+				<div class="figure">
+					<img src="" alt="">
+				</div>
+				<div class="upload-img">
+					<input type="file">
+					<span class="moni-btn">上传图片</span>
+				</div>
+				<div class="message">天数不能为空</div>
+			</li>
+		</ul>
+	</div>
+	<div class="reward-footer main-wraper">
+		<a class="prev" href="javascript:history.go(-1)">上一步</a>
+		<!-- 可点击状态的时候要移除desable 类名 -->
+		<a href="#" class="skip desable">下一步</button>
+	</div>
+</body>
+<script src="../JqQueryBuilder/jquery_1.10.2.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/timepicker/moment.js"></script>
+<script type="text/javascript" src="../js/timepicker/daterangepicker.js"></script>
+<script src="../js/createCoupon.js"></script>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>创建优惠券规则</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	  crossorigin="anonymous">
+    <link href="../css/timepicker/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" type="text/css" href="../css/publick.css">
+	<link rel="stylesheet" type="text/css" href="../css/home.css">
+	<script src="../JqQueryBuilder/jquery_1.10.2.min.js"></script>
+</head>
+
+<body>
+	<!-- 公共头部1 -->
+	<div class="global-top-navs">
+		<div class="main">
+			<ul class="right-nav">
+				<li class="ok">1</li>
+				<li class="ok">2</li>
+				<li class="ok">3</li>
+				<li class="ok">4</li>
+				<li class="active new-template">创建APP消息模版</li>
+				<li>6</li>
+			</ul>
+			<div class="left-nav">
+				正在创建活动 [
+				<span class="name"> 2018年1月注册会注册会会注册会</span> ]
+				<div class="time">
+					<em>起止日期：</em>
+					<span>2018.02.22 - 06:30</span> ~
+					<span>2019.02.22 - 06:30</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 公共头部 end -->
+
+	<!-- 主要内容开始创建规则 -->
+	<div class="containers created-rule" id="container">
+		<h3 class="title">第5步 创建APP消息模版</h3>
+		<p class="des">请设定发送给用户的APP消息模版，您可以手动填写创建，也可以套用已有的APP消息模版</p>
+		<!-- 表单 -->
+		<form class="created-form marketing-created created-news">
+			<div class="main-wrap">
+				<!-- 表单填写不变内容 -->
+				<div class="main-right">
+					<span class="marketing-icon"></span>
+					<p class="des">复制已有的营销活动信息，在其基础上修改</p>
+					<button class="copy-btn" type="button">复制已有营销活动</button>
+				</div>
+				<ul class="main-left">
+					<!-- 需要显示错误信息的时候li添加类名err -->
+					<li class="activity-name">
+						<label>
+							<strong>模板名称：</strong>
+						</label>
+						<input type="text" class="input-text">
+						<div class="message">错误提示内容</div>
+					</li>
+					<li>
+						<label>
+							<strong>模板内容：</strong>
+						</label>
+						<div class="template-content">
+							<textarea name="" id=""></textarea>
+							<div class="add-type">添加变量</div>
+							<div class="type-all">
+								<ul>
+									<li>会员姓名</li>
+									<li>会员可用积分</li>
+								</ul>
+							</div>
+						</div>
+						<div class="message">错误提示内容</div>
+					</li>
+					<li>
+						<label>
+							<strong>发送方式：</strong>
+						</label>
+						<div class="select-imitate changeTemplate" style="margin:0 14px 10px 0">
+							<ul class="dropdown-nav">
+								<!-- data-radiovalue 相当于单选框的value -->
+								<li class="select-item-radio selected" data-viewid="1">即时发送</li>
+								<li class="select-item-radio" data-viewid="2">定时发送</li>
+							</ul>
+							<span class="dropdown-toggle">即时发送</span>
+							<!-- 选中的value传递到隐藏域里面 -->
+							<input type="hidden" value="" class="radio-value">
+							<span class="right-btn">
+								<i class="up">上</i>
+								<i class="down">下</i>
+							</span>
+						</div>
+						<div class="select-imitate" data-changeId="2" id="OrderDiscount" style="display: none;">
+							<ul class="dropdown-nav">
+								<!-- data-radiovalue 相当于单选框的value -->
+								<li class="select-item-radio selected" data-childview="1">指定日期</li>
+								<li class="select-item-radio" data-childview="2">每天</li>
+								<li class="select-item-radio" data-childview="3">每月</li>
+								<li class="select-item-radio" data-childview="4">每周</li>
+							</ul>
+							<span class="dropdown-toggle">指定日期</span>
+							<!-- 选中的value传递到隐藏域里面 -->
+							<input type="hidden" value="" class="radio-value">
+							<span class="right-btn">
+								<i class="up">上</i>
+								<i class="down">下</i>
+							</span>
+						</div>
+						<div class="message">错误提示内容</div>
+					</li>
+					<!--指定日期  -->
+					<li class="times" data-childId="1" data-changeId="2" style="display: none;">
+						<label>
+							<strong>设定日期时间：</strong>
+						</label>
+						<div class="to-set-times">
+							<input type="text" value="2018-4-13 21:17" class="sent-datas">
+							<span class="right-btn">
+								<i class="up">上</i>
+								<i class="down">下</i>
+							</span>
+						</div>
+						<div class="message">错误提示内容</div>
+					</li>
+					<!-- 每天 -->
+					<li class="times" data-childId="2" style="display: none;">
+						<label>
+							<strong>每天：</strong>
+						</label>
+						<div class="to-set-times">
+							<input type="text" value="" class="every-time" id="datetimepicker">
+							<span class="right-btn">
+								<i class="up">上</i>
+								<i class="down">下</i>
+							</span>
+						</div>
+						<div class="message">错误提示内容</div>
+					</li>
+					<!-- 每月 -->
+					<li class="times" data-childId="3" style="display: none;">
+						<div class="filter-box">
+							<label>
+								<strong>每月x日：</strong>
+							</label>
+							<div class="to-set-times inline" style="padding-right: 0">
+								<input type="number" value="1">
+							</div>
+						</div>
+						<div class="filter-box">
+							<label>
+								<strong>发送时间：</strong>
+							</label>
+							<div class="to-set-times inline">
+								<input type="text" value="" id="mouth_time">
+								<span class="right-btn">
+									<i class="up">上</i>
+									<i class="down">下</i>
+								</span>
+							</div>
+						</div>
+						<div class="message">错误提示内容</div>
+					</li>
+					<!-- 每周 -->
+					<li class="times" data-childId="4" style="display: none;">
+						<div class="filter-box">
+							<label>
+								<strong>每周x：</strong>
+							</label>
+							<div class="select-imitate inline">
+								<ul class="dropdown-nav">
+									<!-- data-radiovalue 相当于单选框的value -->
+									<li class="select-item-radio selected">周一</li>
+									<li class="select-item-radio">周二</li>
+									<li class="select-item-radio">周三</li>
+									<li class="select-item-radio">周四</li>
+									<li class="select-item-radio">周五</li>
+									<li class="select-item-radio">周六</li>
+									<li class="select-item-radio">周日</li>
+								</ul>
+								<span class="dropdown-toggle">周一</span>
+								<!-- 选中的value传递到隐藏域里面 -->
+								<input type="hidden" value="" class="radio-value">
+								<span class="right-btn">
+									<i class="up">上</i>
+									<i class="down">下</i>
+								</span>
+							</div>
+						</div>
+						<div class="filter-box">
+							<label>
+								<strong>发送时间：</strong>
+							</label>
+							<div class="to-set-times inline">
+								<input type="text" value="" id="week_time">
+								<span class="right-btn">
+									<i class="up">上</i>
+									<i class="down">下</i>
+								</span>
+							</div>
+						</div>
+						<div class="message">错误提示内容</div>
+					</li>
+					
+				</ul>
+				<!-- 表单填写内容end -->
+			</div>
+			<!-- 提交按钮模块 -->
+			<!-- 可提交状态去掉disabled 类名-->
+			<a class="prive" href="javascript:history.go(-1)">上一步</a>
+			<button class="created-people-submit disabled" disabled="">下一步</button>
+		</form>
+		<!-- 表单 end-->
+	</div>
+	<!-- 主要内容开始 创建规则end -->
+</body>
+<script type="text/javascript" src="../js/jquery.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/time/bootstrap-datetimepicker.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="../js/time/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+<script src="../js/createCoupon.js"></script>
+<script type="text/javascript">
+	
+</script>
+</html>

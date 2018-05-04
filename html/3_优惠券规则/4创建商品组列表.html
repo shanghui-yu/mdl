@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>创建优惠券规则</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<link rel="stylesheet" href="../../css/bootstrap.css">
+	<script src="../../JqQueryBuilder/jquery_1.10.2.min.js"></script>
+	<link href="../../JqQueryBuilder/query_builder.default.min.css" rel="stylesheet" />
+	<script src="../../JqQueryBuilder/doT.min.js"></script>
+	<script src="../../JqQueryBuilder/jQuery.extendext.min.js"></script>
+	<script src="../../JqQueryBuilder/query_builder.min.js"></script>
+	<script src="../../JqQueryBuilder/query_builder.zh_CN.js"></script>
+	<script src="../../JqQueryBuilder/ManageProduct.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../css/publick.css">
+	<link rel="stylesheet" type="text/css" href="../../css/home.css">
+
+</head>
+
+<body>
+	<!-- 公共头部1 -->
+	<div class="global-top-navs">
+		<div class="main">
+			<ul class="right-nav">
+				<li>1</li>
+				<li class="active price">奖励配置</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>总览</li>
+			</ul>
+			<div class="left-nav">
+				正在创建活动 [
+				<span class="name">2018年1月_上海_P_注册1月_上海_P_注册.</span>]
+				<div class="time">
+					<em>起止日期：</em>
+					<span>2018.02.22 - 06:30</span> ~
+					<span>2019.02.22 - 06:30</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 公共头部 end -->
+
+	<!-- 主要内容开始创建规则 -->
+	<div class="containers created-rule" id="container">
+		<h3 class="title">创建商品组</h3>
+		<p class="des">请输入商品组名称并设定条件。若您不设定任何条件，则对所有商品生效。</p>
+		<!-- 表单 -->
+		<form class="created-form">
+			<div class="change-template create-people err">
+				<strong>
+					<i class="must">*</i>商品组名称：</strong>
+				<input type="text" class="list-name form-control">
+				<div class="message">错误提示内容</div>
+			</div>
+			<div class="content produc-group-list clearfix">
+				<!-- 表单填写不变内容 -->
+				<div class="left">
+					<h3 class="header-title">设定商品组筛选规则</h3>
+					<div id="qb_customer" class="query_view"></div>
+				</div>
+				<div class="right">
+					<h3 class="header-title">包含商品（
+						<i>0</i>）</h3>
+					<div class="similarity-table">
+						<!-- 如果需要选中状态给里面的span添加marketing-btn -->
+						<div class="thead">
+							<div style="width:146px" class="th">
+								<span>PLUCode</span>
+							</div>
+							<div style="width:185px" class="th">
+								<span class="marketing-btn">ProductName</span>
+							</div>
+						</div>
+						<div class="tbody">
+							<table class="table table-hover table-striped">
+								<tbody>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<!-- 表单填写内容end -->
+			</div>
+			<!-- 提交按钮模块 -->
+			<!-- 可提交状态去掉disabled 类名-->
+			<div class="produc-group-footer">
+				<a class="prev" href="javascript:history.go(-1)">上一步</a>
+				<!-- 可以创建的时候去掉 desable-->
+				<button class="created desable" type="button">确认创建</button>
+				<button class="look-shop" type="button">查看选中的商店</button>
+			</div>
+
+		</form>
+		<!-- 表单 end-->
+	</div>
+	<!-- 主要内容开始 创建规则end -->
+</body>
+
+<script src="../../js/createCoupon.js"></script>
+
+</html>

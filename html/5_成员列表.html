@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<meta charset="UTF-8">
+	<title>创建优惠券规则</title>
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/publick.css">
+	<link rel="stylesheet" type="text/css" href="../css/marketing.css">
+</head>
+
+<body>
+	<!-- 公共头部1 -->
+	<div class="global-top-menu">
+		<ul class="menu-wraper">
+			<li>
+				<a href="">Dashboard</a>
+			</li>
+			<li>
+				<a href="">营销活动</a>
+			</li>
+			<li>
+				<a href="">优惠券规则</a>
+			</li>
+			<li>
+				<a href="">积分规则</a>
+			</li>
+			<li class="active">
+				<a href="">成员列表</a>
+			</li>
+			<li>
+				<a href="">帮助</a>
+			</li>
+		</ul>
+	</div>
+	<!-- 公共头部 end -->
+
+	<!-- Dashboard 头部-->
+	<div class="main-wraper head-info coupon-rule">
+		<button class="created-new-btn">创建新的成员列表</button>
+		<h3 class="menu-name">成员列表</h3>
+		<form action="" class="filter-wrap new-action">
+			<label for="" class="text">包含新注册会员：</label>
+			<div class="select-imitate">
+				<ul class="dropdown-nav">
+					<li class="select-item-radio selected" data-radiovalue="0">请选择是否包含新注册会员</li>
+					<li class="select-item-radio" data-radiovalue="1">是</li>
+					<li class="select-item-radio" data-radiovalue="2">否</li>
+				</ul>
+				<!-- 选中的value传递到隐藏域里面 -->
+				<input type="hidden" value="" class="radio-value">
+				<span class="dropdown-toggle">请选择是否包含新注册会员</span>
+				<span class="right-btn">
+					<i class="up">上</i>
+					<i class="down">下</i>
+				</span>
+			</div>
+			<div class="search-wrap">
+				<input type="text" placeholder="搜索ID/成员列表名称">
+				<button type="search" class="serach-btn"></button>
+			</div>
+		</form>
+	</div>
+	<!-- Dashboard end -->
+
+	<!-- 主要内容开始创建规则 -->
+	<div class="containers main-wraper" id="container">
+		<!-- 表格loding -->
+		<div class="table-loading" id="tableLoading">
+			<div class="loading">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<!-- 表格loding end-->
+		<div class="similarity-table people-list-table">
+			<!-- 如果需要选中状态给里面的span添加marketing-btn -->
+			<div class="thead">
+				<div style="width:110px" class="th">
+					<span>ID</span>
+				</div>
+				<div style="width:605px" class="th">
+					<span class="marketing-btn">成员列表名称</span>
+				</div>
+				<div style="width:300px" class="th">
+					<span>包含新注册会员</span>
+				</div>
+				<div class="th">
+					<span>状态</span>
+				</div>
+			</div>
+			<div class="tbody">
+				<table class="table table-hover table-striped">
+					<tbody>
+						<tr>
+							<td>ML5643</td>
+							<td>上海地区成员</td>
+							<td>是</td>
+							<td class="state">复制</td>
+						</tr>
+						<tr>
+							<td>ML5643</td>
+							<td>上海地区成员</td>
+							<td>是</td>
+							<td class="state primary">编辑</td>
+						</tr>
+						<tr>
+							<td>ML5643</td>
+							<td>上海地区成员</td>
+							<td>是</td>
+							<td class="state primary">编辑</td>
+						</tr>
+						<tr>
+							<td>ML5643</td>
+							<td>上海地区成员</td>
+							<td>否</td>
+							<td class="state primary">编辑</td>
+						</tr>
+						<tr>
+							<td>ML5643</td>
+							<td>上海地区成员</td>
+							<td>否</td>
+							<td class="state">复制</td>
+						</tr>
+						<tr>
+							<td>ML5643</td>
+							<td>上海地区成员</td>
+							<td>否</td>
+							<td class="state">复制</td>
+						</tr>
+						<tr>
+							<td>ML5643</td>
+							<td>上海地区成员</td>
+							<td>否</td>
+							<td class="state primary">编辑</td>
+						</tr>
+						<tr>
+							<td>ML5643</td>
+							<td>上海地区成员</td>
+							<td>否</td>
+							<td class="state">复制</td>
+						</tr>
+						<tr>
+							<td>ML5643</td>
+							<td>上海地区成员</td>
+							<td>否</td>
+							<td class="state">复制</td>
+						</tr>
+						<tr>
+							<td>ML5643</td>
+							<td>上海地区成员</td>
+							<td>否</td>
+							<td class="state">复制</td>
+						</tr>
+						<tr>
+							<td>ML5643</td>
+							<td>上海地区成员</td>
+							<td>是</td>
+							<td class="state">复制</td>
+						</tr>
+						<tr>
+							<td>ML5643</td>
+							<td>上海地区成员</td>
+							<td>是</td>
+							<td class="state">复制</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="global-page-two clearfix">
+			<div class="page-filter">
+				<span class="lable" style="margin-right: 10px">共1000条</span>
+				<span class="lable">显示条数：</span>
+				<a href="" class="active">25</a>
+				<a href="">50</a>
+				<a href="">100</a>
+			</div>
+			<div class="page-box">
+				<a href="#" aria-label="more-prev">
+					<span aria-hidden="true">&lt;&lt;</span>
+				</a>
+				<a href="#" aria-label="prev">
+					<span aria-hidden="true">&lt;</span>
+				</a>
+				<a href="#" class="active">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#" aria-label="next">
+					<span aria-hidden="true">&gt;</span>
+				</a>
+				<a href="#" aria-label="more-next">
+					<span aria-hidden="true">&gt;&gt;</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- 主要内容开始 end -->
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/createCoupon.js"></script>
+
+</html>

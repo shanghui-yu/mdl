@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>创建优惠券规则</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/publick.css">
+	<link rel="stylesheet" type="text/css" href="../css/home.css">
+</head>
+
+<body>
+	<!-- 公共头部1 -->
+	<div class="global-top-navs">
+		<div class="main">
+			<ul class="right-nav">
+				<li class="ok">1</li>
+				<li class="active price">奖励配置</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+			</ul>
+			<div class="left-nav">
+				正在创建活动 [
+				<span class="name">巨无霸第二件仅需5元</span> ]
+				<div class="time">
+					<em>起止日期：</em>
+					<span> 2018.12.31 </span> ~
+					<span> 2018.12.31 </span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 公共头部 end -->
+
+	<!-- 主要内容开始创建规则 -->
+	<div class="containers created-rule" id="container">
+		<h3 class="title">创建优惠券规则</h3>
+		<p class="des">请选择优惠券类型，并设置优惠券规则的条件、奖励和特殊控制设置，您也可以导入一个现有的优惠券规则，在其基础上进行编辑。</p>
+		<button class="copy-btn">复制已有优惠券规则并编辑</button>
+		<!-- 表单 -->
+		<form class="created-form">
+			<div class="change-template">
+				<strong>Template：</strong>
+				<div class="select-imitate" id="changeTemplate">
+					<ul class="dropdown-nav">
+						<li class="select-item-radio selected" data-viewid="1">BOGO</li>
+						<li class="select-item-radio" data-viewid="2">Multi Item Discount</li>
+						<li class="select-item-radio" data-viewid="3">Order Discount</li>
+						<li class="select-item-radio" data-viewid="4">Single Item Discount</li>
+						<li class="select-item-radio" data-viewid="5">Substitution</li>
+						<li class="select-item-radio" data-viewid="6">Buy,buy,get</li>
+						<li class="select-item-radio" data-viewid="7">Buy,get,get</li>
+						<li class="select-item-radio" data-viewid="8">Buy,buy,buy,get</li>
+						<li class="select-item-radio" data-viewid="9">Buy,buy,buy,get,get</li>
+					</ul>
+					<span class="dropdown-toggle">BOGO</span>
+					<span class="right-btn">
+						<i class="up">上</i>
+						<i class="down">下</i>
+					</span>
+				</div>
+			</div>
+			<div class="content">
+				<!-- bogo -->
+				<div class="bogo filter-template" id="bogo" data-changeId="1">
+					<em class="text">买</em>
+					<div class="select-imitate" style="width: 150px;">
+						<ul class="dropdown-nav">
+							<li class="select-item-radio selected" data-radiovalue="0">1</li>
+							<li class="select-item-radio" data-radiovalue="1">2</li>
+							<li class="select-item-radio" data-radiovalue="2">3</li>
+						</ul>
+						<!-- 选中的value传递到隐藏域里面 -->
+						<input type="hidden" value="" class="radio-value">
+						<span class="dropdown-toggle">1</span>
+						<span class="right-btn">
+							<i class="up">上</i>
+							<i class="down">下</i>
+						</span>
+					</div>
+					<span class="coupon-btn first-btn">巨无霸</span>
+					<span class="again-shoper">
+						<em class="text">送</em>
+						<span class="coupon-btn two-btn">中杯可乐</span>
+					</span>
+					<label for="againProduct" class="again-product">
+						<input type="checkbox" id="againProduct">同样产品
+					</label>
+					<div class="select-imitate filete-next" style="width: 150px;">
+						<ul class="dropdown-nav">
+							<li class="select-item-radio selected" data-radiovalue="0">折扣</li>
+							<li class="select-item-radio" data-radiovalue="1">减</li>
+							<li class="select-item-radio" data-radiovalue="3" data-hideinput='0'>免费</li>
+						</ul>
+						<!-- 选中的value传递到隐藏域里面 -->
+						<input type="hidden" value="" class="radio-value">
+						<span class="dropdown-toggle">折扣</span>
+						<span class="right-btn">
+							<i class="up">上</i>
+							<i class="down">下</i>
+						</span>
+					</div>
+					<input type="text" class="text-input" data-input='0'>
+					<!-- 错误提示默认隐藏 -->
+					<div class="err-msg" style="display: block;">全局输入错误提示可以复制这个div</div>
+				</div>
+				<!-- bogo -->
+
+				<!-- multiItemDiscount -->
+				<div class="multi-item-discount filter-template" id="multiItemDiscount" data-changeId="2">
+					<em class="text">买</em>
+					<div class="select-imitate" style="width: 150px;">
+						<ul class="dropdown-nav">
+							<li class="select-item-radio selected" data-radiovalue="0">1</li>
+							<li class="select-item-radio" data-radiovalue="1">2</li>
+							<li class="select-item-radio" data-radiovalue="2">3</li>
+						</ul>
+						<!-- 选中的value传递到隐藏域里面 -->
+						<input type="hidden" value="" class="radio-value">
+						<span class="dropdown-toggle">1</span>
+						<span class="right-btn">
+							<i class="up">上</i>
+							<i class="down">下</i>
+						</span>
+					</div>
+					<span class="coupon-btn first-btn">巨无霸</span>
+					<div class="select-imitate" style="width: 150px;">
+						<ul class="dropdown-nav">
+							<li class="select-item-radio selected" data-radiovalue="0">仅需</li>
+							<li class="select-item-radio" data-radiovalue="1">仅需2</li>
+							<li class="select-item-radio" data-radiovalue="2">仅需3</li>
+						</ul>
+						<!-- 选中的value传递到隐藏域里面 -->
+						<input type="hidden" value="" class="radio-value">
+						<span class="dropdown-toggle">仅需</span>
+						<span class="right-btn">
+							<i class="up">上</i>
+							<i class="down">下</i>
+						</span>
+					</div>
+					<input type="text" class="text-input">
+					<div class="err-msg" style="display: block;">全局输入错误提示可以复制这个div</div>
+				</div>
+				<!-- multiItemDiscount -->
+
+				<!-- OrderDiscount -->
+				<div class="order-discount filter-template" data-changeId="3">
+					<div class="select-imitate" style="width: 150px;margin-left:15px " id="OrderDiscount">
+						<ul class="dropdown-nav">
+							<li class="select-item-radio selected" data-radiovalue="0" data-childview="0">订单折扣</li>
+							<li class="select-item-radio" data-radiovalue="1" data-childview="1">购买商品组</li>
+						</ul>
+						<!-- 选中的value传递到隐藏域里面 -->
+						<input type="hidden" value="" class="radio-value">
+						<span class="dropdown-toggle">订单折扣</span>
+						<span class="right-btn">
+							<i class="up">上</i>
+							<i class="down">下</i>
+						</span>
+					</div>
+					<div data-childId='0' class="filter-template-child">
+						<input type="text" class="text-input">
+						<em class="text">送订单优惠</em>
+						<div class="select-imitate filete-next" style="width: 150px;">
+							<ul class="dropdown-nav">
+								<li class="select-item-radio selected" data-radiovalue="0">折扣</li>
+								<li class="select-item-radio" data-radiovalue="1">减</li>
+								<li class="select-item-radio" data-radiovalue="3" data-hideinput='0'>免费</li>
+							</ul>
+							<!-- 选中的value传递到隐藏域里面 -->
+							<input type="hidden" value="" class="radio-value">
+							<span class="dropdown-toggle">折扣</span>
+							<span class="right-btn">
+								<i class="up">上</i>
+								<i class="down">下</i>
+							</span>
+						</div>
+						<input type="text" class="text-input" data-input='0'>
+					</div>
+					<div data-childId='1' style="display: none;" class="filter-template-child">
+						<div class="select-imitate" style="width: 150px;">
+							<ul class="dropdown-nav">
+								<li class="select-item-radio selected" data-radiovalue="0">5</li>
+								<li class="select-item-radio" data-radiovalue="1">6</li>
+							</ul>
+							<!-- 选中的value传递到隐藏域里面 -->
+							<input type="hidden" value="" class="radio-value">
+							<span class="dropdown-toggle">5</span>
+							<span class="right-btn">
+								<i class="up">上</i>
+								<i class="down">下</i>
+							</span>
+						</div>
+						<span class="coupon-btn first-btn">巨无霸</span>
+						<em class="text">送订单优惠</em>
+						<div class="select-imitate" style="width: 150px;">
+							<ul class="dropdown-nav">
+								<li class="select-item-radio selected" data-radiovalue="0">折扣</li>
+								<li class="select-item-radio" data-radiovalue="1">减</li>
+								<li class="select-item-radio" data-radiovalue="3">免费</li>
+							</ul>
+							<!-- 选中的value传递到隐藏域里面 -->
+							<input type="hidden" value="" class="radio-value">
+							<span class="dropdown-toggle">折扣</span>
+							<span class="right-btn">
+								<i class="up">上</i>
+								<i class="down">下</i>
+							</span>
+						</div>
+						<input type="text" class="text-input">
+					</div>
+				</div>
+				<!-- OrderDiscount -->
+
+				<!-- SingleItemDiscount -->
+				<div class="single-item-discount filter-template" id="SingleItemDiscount" data-changeId="4">
+					<em class="text">以</em>
+					<div class="select-imitate" style="width: 150px;">
+						<ul class="dropdown-nav">
+							<li class="select-item-radio selected" data-radiovalue="0">%折扣</li>
+						</ul>
+						<!-- 选中的value传递到隐藏域里面 -->
+						<input type="hidden" value="" class="radio-value">
+						<span class="dropdown-toggle">%折扣</span>
+						<span class="right-btn">
+							<i class="up">上</i>
+							<i class="down">下</i>
+						</span>
+					</div>
+					<input type="text" class="text-input">
+					<em class="text">买</em>
+					<span class="coupon-btn first-btn">巨无霸</span>
+					<div class="err-msg" style="display: block;">全局输入错误提示可以复制这个div</div>
+				</div>
+				<!-- SingleItemDiscount -->
+
+				<!-- Substitution -->
+				<div class="substitution filter-template" id="Substitution" data-changeId="5">
+					<em class="text">买</em>
+					<span class="coupon-btn first-btn">大杯可乐</span>
+					<em class="text">以</em>
+					<span class="coupon-btn two-btn">中杯可乐</span>
+					<em class="text">价格</em>
+					<div class="err-msg" style="display: block;">全局输入错误提示可以复制这个div</div>
+				</div>
+				<!-- Substitution -->
+
+				<!-- Buybuyget -->
+				<div class="buybuyget filter-template buybuygetmargin" id="BuyBuyGet" data-changeId="6">
+					<em class="text">买</em>
+					<span class="coupon-btn first-btn">巨无霸</span>
+					<em class="text">和</em>
+					<span class="coupon-btn two-btn">中薯条</span>
+					<em class="text">送</em>
+					<span class="coupon-btn two-btn">中杯可乐</span>
+					<div class="select-imitate" style="width: 150px;">
+						<ul class="dropdown-nav">
+							<li class="select-item-radio selected" data-radiovalue="0">减¥</li>
+						</ul>
+						<!-- 选中的value传递到隐藏域里面 -->
+						<input type="hidden" value="" class="radio-value">
+						<span class="dropdown-toggle">减¥</span>
+						<span class="right-btn">
+							<i class="up">上</i>
+							<i class="down">下</i>
+						</span>
+					</div>
+					<input type="text" class="text-input">
+					<div class="err-msg" style="display: block;">全局输入错误提示可以复制这个div</div>
+				</div>
+				<!-- Buybuyget -->
+
+				<!-- BuyGetGet -->
+				<div class="buybuyget filter-template" id="BuyGetGet" data-changeId="7">
+					<em class="text">买</em>
+					<span class="coupon-btn first-btn">巨无霸</span>
+					<em class="text">送</em>
+					<span class="coupon-btn two-btn">中薯条</span>
+					<em class="text">和</em>
+					<span class="coupon-btn two-btn">中杯可乐</span>
+					<div class="select-imitate" style="width: 150px;">
+						<ul class="dropdown-nav">
+							<li class="select-item-radio selected" data-radiovalue="0">减¥</li>
+						</ul>
+						<!-- 选中的value传递到隐藏域里面 -->
+						<input type="hidden" value="" class="radio-value">
+						<span class="dropdown-toggle">减¥</span>
+						<span class="right-btn">
+							<i class="up">上</i>
+							<i class="down">下</i>
+						</span>
+					</div>
+					<input type="text" class="text-input">
+					<div class="err-msg" style="display: block;">全局输入错误提示可以复制这个div</div>
+				</div>
+				<!-- BuyGetGet -->
+
+				<!-- Buy,buy,buy,get -->
+				<div class="buybuyget filter-template buybuybuyget" id="BuyBuyBuyGet" data-changeId="8">
+					<em class="text">买</em>
+					<span class="coupon-btn first-btn">巨无霸</span>
+					<em class="text">和</em>
+					<span class="coupon-btn two-btn">中薯条</span>
+					<em class="text">和</em>
+					<span class="coupon-btn two-btn">中杯可乐</span>
+					<em class="text">送</em>
+					<span class="coupon-btn two-btn">麦乐鸡</span>
+					<div class="select-imitate" style="width: 150px;">
+						<ul class="dropdown-nav">
+							<li class="select-item-radio selected" data-radiovalue="0">减¥</li>
+						</ul>
+						<!-- 选中的value传递到隐藏域里面 -->
+						<input type="hidden" value="" class="radio-value">
+						<span class="dropdown-toggle">减¥</span>
+						<span class="right-btn">
+							<i class="up">上</i>
+							<i class="down">下</i>
+						</span>
+					</div>
+					<input type="text" class="text-input">
+					<div class="err-msg" style="display: block;">全局输入错误提示可以复制这个div</div>
+				</div>
+				<!-- Buy,buy,buy,get -->
+				<!-- Buy,buy,buy,get,get -->
+				<div class="buybuyget filter-template buybuybuygetget" id="BuyBuyBuyGetGet" data-changeId="9">
+					<div style="margin-bottom: 15px;">
+						<em class="text">买</em>
+						<span class="coupon-btn first-btn">巨无霸</span>
+						<em class="text">和</em>
+						<span class="coupon-btn two-btn">中薯条</span>
+						<em class="text">和</em>
+						<span class="coupon-btn two-btn">中薯条</span>
+					</div>
+					<div>
+						<em class="text">送</em>
+						<span class="coupon-btn two-btn">中杯可乐</span>
+						<em class="text">和</em>
+						<span class="coupon-btn two-btn">麦乐鸡</span>
+						<div class="select-imitate" style="width: 150px;">
+							<ul class="dropdown-nav">
+								<li class="select-item-radio selected" data-radiovalue="0">减¥</li>
+							</ul>
+							<!-- 选中的value传递到隐藏域里面 -->
+							<input type="hidden" value="" class="radio-value">
+							<span class="dropdown-toggle">减¥</span>
+							<span class="right-btn">
+								<i class="up">上</i>
+								<i class="down">下</i>
+							</span>
+						</div>
+						<input type="text" class="text-input">
+					</div>
+					<div class="err-msg" style="display: block;">全局输入错误提示可以复制这个div</div>
+				</div>
+				<!-- Buy,buy,buy,get,get -->
+
+				<!-- 表单填写不变内容 -->
+				<div class="main">
+					<div class="left">
+						<div class="figure">
+							<img src="http://temp.im/150x150" alt="">
+						</div>
+						<div class="upload-img">
+							<input type="file">
+							<span class="moni-btn">上传图片</span>
+						</div>
+					</div>
+					<ul class="right">
+						<li>
+							<p class="warm">
+								<strong>规则名称</strong> (已输入 0/12字，此字段输入的内容为优惠券卡片上的名称)</p>
+							<input type="text" name="" class="err-input">
+							<div class="err-msg">全局输入错误提示可以复制这个div</div>
+						</li>
+						<li>
+							<p class="warm">
+								<strong>原价</strong> (描述)</p>
+							<input type="text" name="" style="width: 200px">
+							<label for="newPeople" class="contain-newPeople moni-label">
+								<input type="checkbox" id="newPeople"><i></i>起
+							</label>
+						</li>
+						<li>
+							<p class="warm">
+								<strong>折后价仅</strong> (描述)</p>
+							<input type="text" name="" style="width: 200px">
+							<label for="newPeople" class="contain-newPeople moni-label">
+								<input type="checkbox" id="newPeople"><i></i>起
+							</label>
+						</li>
+						<li>
+							<p class="warm">
+								<strong>价格描述</strong> (描述)</p>
+							<input type="text" name="">
+						</li>
+						<li>
+							<p class="warm">
+								<strong>规则描述</strong> (已输入 0/9字，此字段输入的内容为优惠券卡片上的描述以及优惠券详情的描述)</p>
+							<input type="text" name="">
+						</li>
+						<li>
+							<p class="warm">
+								<strong>使用须知</strong> (已输入 0/2000字，此字段输入的内容为优惠券详情页使用须知里的内容)</p>
+							<textarea name="" id="" cols="30" rows="10"></textarea>
+						</li>
+						<li>
+							<p class="warm">
+								<strong>可用时段</strong>(已输入 0/15字)</p>
+							<input type="text" name="">
+						</li>
+						<li>
+							<p class="warm">
+								<strong>标签</strong> (已输入 0/2字，此字段输入的内容为优惠券卡片左上角的标签)</p>
+							<input type="text" name="">
+						</li>
+					</ul>
+				</div>
+				<!-- 表单填写内容end -->
+			</div>
+			<!-- 提交按钮模块 -->
+			<div class="btn-groups">
+				<a class="prev" href="javascript:history.go(-1)">上一步</a>
+				<!-- 可点击状态的时候要移除desable 类名 -->
+				<button type="submit" class="submit desable" disabled>确认创建</button>
+			</div>
+		</form>
+		<!-- 表单 end-->
+	</div>
+	<!-- 主要内容开始 创建规则end -->
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/createCoupon.js"></script>
+
+</html>

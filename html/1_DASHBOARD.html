@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>创建优惠券规则</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/timepicker/bootstrap-datetimepicker.min.css">
+	<link href="../css/timepicker/font-awesome.min.css" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" media="all" href="../css/timepicker/daterangepicker-bs3.css" />
+	<link rel="stylesheet" type="text/css" href="../css/publick.css">
+	<link rel="stylesheet" type="text/css" href="../css/marketing.css">
+</head>
+
+<body>
+	<!-- 公共头部1 -->
+	<div class="global-top-menu">
+		<ul class="menu-wraper">
+			<li class="active">
+				<a href="">Dashboard</a>
+			</li>
+			<li>
+				<a href="">营销活动</a>
+			</li>
+			<li>
+				<a href="">优惠券规则</a>
+			</li>
+			<li>
+				<a href="">积分规则</a>
+			</li>
+			<li>
+				<a href="">成员列表</a>
+			</li>
+			<li>
+				<a href="">帮助</a>
+			</li>
+		</ul>
+	</div>
+	<!-- 公共头部 end -->
+
+	<!-- Dashboard 头部-->
+	<div class="covered-width">
+		<div class="main-wraper head-info">
+			<span class="proposal">建议使用IE11以上版本或Chrome浏览器</span>
+			<h3 class="menu-name">Dashboard</h3>
+			<form action="" class="filter-wrap">
+				<label for="" class="text">当前正在进行的营销活动：</label>
+				<div class="select-imitate">
+					<ul class="dropdown-nav">
+						<li>
+							<label for="change_1">
+								<input type="checkbox" id="change_1" name="optionkey"> 2018年1月_所有门店_P_首单...
+							</label>
+						</li>
+						<li>
+							<label for="change_2">
+								<input type="checkbox" id="change_2" name="optionkey"> 2018年1月_所有门店_P_首单...
+							</label>
+						</li>
+						<li>
+							<label for="change_3">
+								<input type="checkbox" id="change_3" name="optionkey"> 2018年1月_所有门店_P_首单...
+							</label>
+						</li>
+						<li>
+							<label for="change_4">
+								<input type="checkbox" id="change_4" name="optionkey"> 2018年1月_所有门店_P_首单...
+							</label>
+						</li>
+					</ul>
+					<span class="dropdown-toggle">CP124_2018年元旦_广州_D_...</span>
+					<span class="right-btn">
+						<i class="up">上</i>
+						<i class="down">下</i>
+					</span>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- Dashboard end -->
+
+	<!-- 优惠卷数量 -->
+	<div class="all-num-wrap">
+		<div class="main">
+			<div class="box">优惠券发放总数：
+				<strong>100,000</strong> 张</div>
+			<div class="box">优惠券发放总数：
+				<strong>88,888</strong> 张</div>
+		</div>
+	</div>
+	<!-- 优惠卷数量end -->
+
+	<!-- 主要内容开始创建规则 -->
+	<div class="containers" id="container">
+		<div class="covered-width">
+			<div class="filter-header main-wraper">
+				<div class="main">
+					<spam class="text">奖励类型：</spam>
+					<div class="select-imitate">
+						<ul class="dropdown-nav">
+							<!-- data-radiovalue 相当于单选框的value -->
+							<li class="select-item-radio selected" data-radiovalue="0">积分</li>
+							<li class="select-item-radio" data-radiovalue="1">积分2</li>
+						</ul>
+						<span class="dropdown-toggle">积分</span>
+						<!-- 选中的value传递到隐藏域里面 -->
+						<input type="hidden" value="" class="radio-value">
+						<span class="right-btn">
+							<i class="up">上</i>
+							<i class="down">下</i>
+						</span>
+					</div>
+					<spam class="text">营销活动状态：</spam>
+					<div class="select-imitate">
+						<ul class="dropdown-nav">
+							<!-- data-radiovalue 相当于单选框的value -->
+							<li class="select-item-radio selected" data-radiovalue="0"> 营销活动状态1</li>
+							<li class="select-item-radio" data-radiovalue="1">营销活动状态2</li>
+						</ul>
+						<span class="dropdown-toggle">营销活动状态1</span>
+						<!-- 选中的value传递到隐藏域里面 -->
+						<input type="hidden" value="" class="radio-value">
+						<span class="right-btn">
+							<i class="up">上</i>
+							<i class="down">下</i>
+						</span>
+					</div>
+				</div>
+				<h3>需要操作的营销活动</h3>
+			</div>
+		</div>
+		<div class="covered-width">
+			<div class="main-wraper">
+				<div class="table-loading" id="tableLoading">
+					<div class="loading">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<table class="table table-hover table-striped marketing-table">
+					<thead>
+						<tr>
+							<th style="width:110px">ID</th>
+							<th style="width:272px">
+								<button class="marketing-btn">营销活动名称</button>
+							</th>
+							<th style="width:145px">奖励类型</th>
+							<th style="width:258px">规则名称</th>
+							<th style="width:172px">营销活动状态</th>
+							<th>活动开始/结束时间</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="yellow">审批中</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="yellow">待执行</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td>草稿</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td>草稿</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td>活动结束</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td>正在执行</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="red">活动终止</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="yellow">待执行</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="red">驳回</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td>草稿</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td>草稿</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td>草稿</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="page-box" style="padding:15px 0">
+					<a href="#" class="more-prev">
+						<span>&laquo;</span>
+					</a>
+					<a href="#" class="prev">
+						<span>&lt;</span>
+					</a>
+					<a href="#">1</a>
+					<a href="#">2</a>
+					<a href="#" class="active">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="#" class="next">
+						<span>&gt;</span>
+					</a>
+					<a href="#" class="more-next">
+						<span>&raquo;</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- 报告 图标 -->
+		<div class="line-filter-wraper">
+			<form action="" class="main-wraper">
+				<h3 class="title">报告</h3>
+				<div class="report-filter">
+					<label>营销活动：</label>
+					<div class="select-imitate">
+						<ul class="dropdown-nav">
+							<li class="select-item-radio selected" data-radiovalue="0">积分</li>
+							<li class="select-item-radio" data-radiovalue="1">积分2</li>
+						</ul>
+						<!-- 选中的value传递到隐藏域里面 -->
+						<input type="hidden" value="" class="radio-value">
+						<span class="dropdown-toggle">积分</span>
+						<span class="right-btn">
+							<i class="up">上</i>
+							<i class="down">下</i>
+						</span>
+					</div>
+
+					<label class="text">活动时间：</label>
+					<div class="datetimepicker-box clearfix">
+						<input type="text" value="2018-04-19 - 2018-04-19" class="text-input start_time">
+					</div>
+
+
+					<label class="text">间隔：</label>
+					<div class="select-imitate">
+						<ul class="dropdown-nav">
+							<li class="select-item-radio selected" data-radiovalue="0">周</li>
+							<li class="select-item-radio" data-radiovalue="1">月</li>
+							<li class="select-item-radio" data-radiovalue="2">年</li>
+						</ul>
+						<!-- 选中的value传递到隐藏域里面 -->
+						<input type="hidden" value="" class="radio-value">
+						<span class="dropdown-toggle">周</span>
+						<span class="right-btn">
+							<i class="up">上</i>
+							<i class="down">下</i>
+						</span>
+					</div>
+					<button type="submit" class="look">查看</button>
+				</div>
+			</form>
+			<!-- 图标 -->
+			<div class="line-echars main-wraper" id="report">
+
+			</div>
+		</div>
+	</div>
+	<!-- 主要内容开始 end -->
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/timepicker/moment.js"></script>
+<script type="text/javascript" src="../js/timepicker/daterangepicker.js"></script>
+<script src="../js/createCoupon.js"></script>
+<script src="../js/echars/echarts.min.js"></script>
+<script src="../js/echars/reports.js"></script>
+
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>创建优惠券规则</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/timepicker/bootstrap-datetimepicker.min.css">
+	<link href="../css/timepicker/font-awesome.min.css" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" media="all" href="../css/timepicker/daterangepicker-bs3.css" />
+	<link rel="stylesheet" type="text/css" href="../css/publick.css">
+	<link rel="stylesheet" type="text/css" href="../css/marketing.css">
+</head>
+
+<body>
+	<!-- 公共头部1 -->
+	<div class="global-top-menu">
+		<ul class="menu-wraper">
+			<li>
+				<a href="">Dashboard</a>
+			</li>
+			<li class="active">
+				<a href="">营销活动</a>
+			</li>
+			<li>
+				<a href="">优惠券规则</a>
+			</li>
+			<li>
+				<a href="">积分规则</a>
+			</li>
+			<li>
+				<a href="">成员列表</a>
+			</li>
+			<li>
+				<a href="">帮助</a>
+			</li>
+		</ul>
+	</div>
+	<!-- 公共头部 end -->
+
+	<!-- Dashboard 头部-->
+	<div class="main-wraper head-info">
+		<button class="created-new-btn">创建新的营销活动</button>
+		<h3 class="menu-name">营销活动</h3>
+		<form action="" class="filter-wrap new-action">
+			<label for="" class="text">奖励类型：</label>
+			<div class="select-imitate" style="width: 150px;">
+				<ul class="dropdown-nav">
+					<li>
+						<label for="change_1">
+							<input type="checkbox" id="change_1" name="optionkey"> 奖励类型1
+						</label>
+					</li>
+					<li>
+						<label for="change_2">
+							<input type="checkbox" id="change_2" name="optionkey"> 奖励类型2
+						</label>
+					</li>
+					<li>
+						<label for="change_3">
+							<input type="checkbox" id="change_3" name="optionkey"> 奖励类型3
+						</label>
+					</li>
+				</ul>
+				<span class="dropdown-toggle">奖励类型：</span>
+				<span class="right-btn">
+					<i class="up">上</i>
+					<i class="down">下</i>
+				</span>
+			</div>
+			<label for="" class="text">营销活动状态：</label>
+			<div class="select-imitate" style="width: 150px;">
+				<ul class="dropdown-nav">
+					<li>
+						<label for="change_5">
+							<input type="checkbox" id="change_5" name="optionkey1"> 营销活动状态
+						</label>
+					</li>
+					<li>
+						<label for="change_6">
+							<input type="checkbox" id="change_6" name="optionkey1"> 营销活动状态2
+						</label>
+					</li>
+					<li>
+						<label for="change_7">
+							<input type="checkbox" id="change_7" name="optionkey1"> 营销活动状3
+						</label>
+					</li>
+				</ul>
+				<span class="dropdown-toggle">营销活动状态</span>
+				<span class="right-btn">
+					<i class="up">上</i>
+					<i class="down">下</i>
+				</span>
+			</div>
+			<label for="" class="text">活动时间：</label>
+			<div class="datetimepicker-box clearfix">
+				<input type="text" value="2018-04-19 - 2018-04-19" class="text-input start_time">
+			</div>
+			<div class="search-wrap">
+				<input type="text" placeholder="搜索活动名称/活动ID/规则名称...">
+				<button type="search" class="serach-btn"></button>
+			</div>
+		</form>
+	</div>
+	<!-- Dashboard end -->
+
+	<!-- 主要内容开始创建规则 -->
+	<div class="containers main-wraper" id="container">
+		<!-- 表格loding -->
+		<div class="table-loading" id="tableLoading">
+			<div class="loading">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<!-- 表格loding end-->
+		<div class="similarity-table activity-table">
+			<!-- 如果需要选中状态给里面的span添加marketing-btn -->
+			<div class="thead">
+				<div style="width:110px" class="th">
+					<span>ID</span>
+				</div>
+				<div style="width:272px" class="th">
+					<span class="marketing-btn">营销活动名称</span>
+				</div>
+				<div style="width:145px" class="th">
+					<span>奖励类型</span>
+				</div>
+				<div style="width:258px" class="th">
+					<span>规则名称</span>
+				</div>
+				<div style="width:172px" class="th">
+					<span>营销活动状态</span>
+				</div>
+				<div class="th">
+					<span>活动开始/结束时间</span>
+				</div>
+			</div>
+			<div class="tbody">
+				<table class="table table-hover table-striped">
+					<tbody>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="yellow state">审批中</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="yellow state">待执行</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="state">草稿</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="state">草稿</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="state">活动结束</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="state">正在执行</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="red state">活动终止</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="yellow state">待执行</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="red state">驳回</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="state">草稿</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="state">草稿</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="state">草稿</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="state">草稿</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="state">草稿</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="state">草稿</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="state">草稿</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="state">草稿</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+
+						<tr>
+							<td>CP5643</td>
+							<td>2018年1月_所有门店_P_首单...</td>
+							<td>积分</td>
+							<td>满50元送20积分</td>
+							<td class="state">草稿</td>
+							<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="global-page-two clearfix">
+			<div class="page-filter">
+				<span class="lable">显示条数：</span>
+				<a href="" class="active">25</a>
+				<a href="">50</a>
+				<a href="">100</a>
+			</div>
+			<div class="page-box">
+				<a href="#" aria-label="more-prev">
+					<span aria-hidden="true">&lt;&lt;</span>
+				</a>
+				<a href="#" aria-label="prev">
+					<span aria-hidden="true">&lt;</span>
+				</a>
+				<a href="#" class="active">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#" aria-label="next">
+					<span aria-hidden="true">&gt;</span>
+				</a>
+				<a href="#" aria-label="more-next">
+					<span aria-hidden="true">&gt;&gt;</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- 主要内容开始 end -->
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/timepicker/moment.js"></script>
+<script type="text/javascript" src="../js/timepicker/daterangepicker.js"></script>
+<script src="../js/createCoupon.js"></script>
+
+</html>

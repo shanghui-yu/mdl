@@ -1,0 +1,88 @@
+/*
+@Description:麦当劳coding
+@author: yushanghui
+@update: 20180320
+*/
+.table-striped>tbody>tr:nth-of-type(even){background-color:#f9f9f9;}
+.table-striped>tbody>tr:nth-of-type(odd){background-color:#eee;}
+.table-hover>tbody>tr:hover{background-color:#fcf8e2;}
+.marketing-table th{height:58px;line-height:58px!important;padding:0 10px!important;font-size:14px;border-bottom:2px solid #ffca03!important;}
+.marketing-table td{font-size:16px;height:37px;}
+.head-info .menu-name{font-size:36px;padding:26px 0 10px;}
+.head-info .proposal{float:right;line-height:44px;font-size:14px;}
+.head-info .filter-wrap{margin:10px 0 12px;line-height:32px;min-height:32px;}
+.all-num-wrap{height:125px;background:#c7c7c7;font-size:21px;line-height:125px;}
+.all-num-wrap .box{float:left;width:50%;text-align:center;position:relative;}
+.all-num-wrap .box strong{font-size:32px;color:#fff;}
+.all-num-wrap .box:first-child::after{content:'';display:block;position:absolute;right:0;top:19px;width:2px;height:88px;background:#b5b5b5;}
+.filter-header{padding:27px 0;line-height:36px;font-size:36px;}
+.filter-header .main{float:right;font-size:14px;}
+.filter-header .main .text{font-weight:bold;margin-left:30px;}
+.filter-header .main .select-template{float:left;}
+
+/* 报告样式 */
+.line-filter-wraper .title{padding:25px 0 0px;line-height:36px;font-size:36px;}
+.line-filter-wraper  .report-filter{margin:15px 0;display:-moz-box; /*Firefox*/display:-webkit-box;align-items:center;}
+.line-filter-wraper .report-filter .select-imitate{margin-right:25px;}
+.line-filter-wraper .report-filter .look{width:65px;height:40px;background:#ffca03;font-size:14px;font-weight:bold;}
+.line-filter-wraper .select-imitate{margin-right:30px;}
+.line-filter-wraper .line-echars{height:500px;background:#fff;}
+.filter-header .select-imitate:last-child{margin-left:25px;}
+
+/* 营销活动 */
+.head-info .created-new-btn{min-width:155px;text-align:center;line-height:40px;height:40px;font-size:14px;background:#ffca03;float:right;margin-top:18px;margin-bottom:12px;}
+.head-info .search-wrap{display:inline-block;height:40px;float:right;font-size:0;}
+.head-info .search-wrap input{width:303px;height:40px; padding:0 10px;border:1px solid #cccccc;border-right: none;font-size:16px;}
+.head-info .search-wrap .serach-btn{width:40px;height:42px; line-height: 42px; background:#ffca03;border:1px solid #e1e1e1;}
+.head-info .search-wrap .serach-btn:after{content:'\e628';font-size:14px;font-family:'mdl'}
+.head-info .filter-wrap.new-action{margin-bottom:20px;    line-height: 40px;}
+.head-info .filter-wrap.new-action .text{font-size: 16px;}
+.new-action .select-imitate{margin-right:25px;}
+
+/* 优惠卷规则 */
+.head-info.coupon-rule .search-wrap input{width:520px;font-size:16px;}
+.activity-table tr>td:nth-of-type(1),.integral-rule-table tr>td:nth-of-type(1),.people-list-table tr>td:nth-of-type(1){width:110px}
+.activity-table tr>td:nth-of-type(2){width:272px}
+.integral-rule-table tr>td:nth-of-type(2){width:372px}
+.activity-table tr>td:nth-of-type(3){width:145px}
+.activity-table tr>td:nth-of-type(4){width:258px}
+.activity-table tr>td:nth-of-type(5){width:172px}
+.integral-rule-table tr>td:nth-of-type(3){width:400px}
+.integral-rule-table tr>td:nth-of-type(4){width:250px}
+.people-list-table tr>td:nth-of-type(2){width:605px;}
+.people-list-table tr>td:nth-of-type(3){width:300px}
+.table-striped > tbody > tr td .figure{float:left;width:72px;height:55px;border:1px solid #cccccc;margin-right:25px;overflow:hidden;}
+.table-striped > tbody > tr td .figure img{max-width:100%;}
+.table-striped > tbody > tr td .content{float:left;}
+.table-striped > tbody > tr td .price{margin-bottom:5px;width:255px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+
+
+/*帮助*/
+.help-head .des{font-size:14px;line-height:24px;padding:5px 0;}
+.help-head .search-wrap{float:left;}
+.help-content{margin:40px auto;}
+.help-content .list{padding-left:110px;position:relative;}
+.help-content .list .num{width:54px;height:54px;font-size:21px;font-weight:bold;display:block;left:0;margin-top:14px;background:url('../images/number-bg.png') no-repeat;text-align:center;line-height:54px;}
+.help-content .list .num:after{content:'';border:5px solid #ffffff;position:absolute;top:68px;left:22px;bottom:-15px;}
+.help-content .list .content{border-top:1px solid #dddddd;}
+.help-content .list:last-child .num:after{display:none;}
+.help-content .list:last-child .content{border-bottom:1px solid #dddddd;}
+.help-content .list .content .title{height:82px;line-height:82px;font-weight:bold;font-size:21px;cursor:pointer;}
+.help-content .list .content .text-content{display:none;}
+.help-content .list .content .text-content p{font-size:14px;line-height:24px;padding:0 0 20px 35px;}
+.help-content .list .content .title:before{content:'\e7a6';font-family:'mdl';margin-right:20px;display:inline-block;color:#ffc910;transform:rotate(180deg);-ms-transform:rotate(180deg);-moz-transform:rotate(180deg);-webkit-transform:rotate(180deg);-o-transform:rotate(180deg);}
+.help-content .list .left{height:100%;width:100px;position:absolute;left:0;top:0;bottom:0;}
+.help-content .list.show .content .text-content{display:block;}
+.help-content .list.show .content .title:before{transform:rotate(0);-ms-transform:rotate(0);-moz-transform:rotate(0);-webkit-transform:rotate(0);-o-transform:rotate(0);}
+.help-content .list.show .num:after{border:5px dashed #fff;bottom:-15px;}
+@media screen and (max-width:1294px){
+	.head-info .search-wrap{float: none;}
+	.people-list-table .th:nth-child(2),.people-list-table tr>td:nth-of-type(2){width:400px!important;}
+	.integral-rule-table .thead .th:nth-of-type(3),.integral-rule-table tr>td:nth-of-type(3){width:300px!important;}
+	.integral-rule-table tr>td:nth-of-type(2),.integral-rule-table .thead .th:nth-of-type(2){width:320px!important;}
+	.table-striped > tbody > tr td .price{width:155px}
+	.activity-table tr>td:nth-of-type(2),.activity-table .thead .th:nth-of-type(2){width:200px!important;}
+	.activity-table tr>td:nth-of-type(3),.activity-table .thead .th:nth-of-type(3){width:100px!important;}
+	.integral-rule-table.thead .th:nth-of-type(4){width:210px!important;}
+	.integral-rule-table.thead .th:nth-of-type(5){width:150px!important;}
+}

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>offer弹窗</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<link rel="stylesheet" href="../../css/bootstrap.css">
+	<link href="../../JqQueryBuilder/query_builder.default.min.css" rel="stylesheet" />
+
+	<link rel="stylesheet" type="text/css" href="../../css/publick.css">
+	<link rel="stylesheet" type="text/css" href="../../css/home.css">
+</head>
+
+<body>
+	<div class="ceshi-btn">
+		<button class="btn btn-primary" data-toggle="modal" data-target="#myModal_10">创建门店列表弹窗</button>
+		<button class="btn btn-primary" data-toggle="modal" data-target="#myModal_11">门店筛选弹窗</button>
+		<button class="btn btn-primary" data-toggle="modal" data-target="#myModal_12">创建门店列表</button>
+	</div>
+	<!-- 创建门店列表弹窗 -->
+	<div class="modal fade global-modal" id="myModal_10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body clearfix">
+					<button class="close" data-dismiss="modal">关</button>
+					<h3 class="title">已有门店列表</h3>
+					<form action="" class="filter-forms">
+						<div class="right">
+							<input type="text" class="form-control" placeholder="输入名称搜索...">
+							<button type="search" class="yello-btn">搜索</button>
+						</div>
+					</form>
+					<div class="similarity-table member-table">
+						<div class="thead">
+							<div style="width:240px" class="th">
+								<span>ID</span>
+							</div>
+							<div style="width:575px" class="th">
+								<span class="marketing-btn">门店列表名称</span>
+							</div>
+							<div class="th">
+								<span>门店总数</span>
+							</div>
+						</div>
+						<div class="tbody">
+							<table class="table table-hover table-striped" cellspacing="0" cellpadding="0" border="0">
+								<tbody>
+									<tr>
+										<td>ML1257</td>
+										<td>成都地区门店</td>
+										<td>100</td>
+									</tr>
+									<tr>
+										<td>ML1257</td>
+										<td>成都地区门店</td>
+										<td>1258</td>
+									</tr>
+									<tr>
+										<td>ML1257</td>
+										<td>成都地区门店</td>
+										<td>1258</td>
+									</tr>
+									<tr>
+										<td>ML1257</td>
+										<td>成都地区门店</td>
+										<td>1258</td>
+									</tr>
+									<tr>
+										<td>ML1257</td>
+										<td>成都地区门店</td>
+										<td>1258</td>
+									</tr>
+									<tr>
+										<td>ML1257</td>
+										<td>成都地区门店</td>
+										<td>1258</td>
+									</tr>
+									<tr>
+										<td>ML1257</td>
+										<td>成都地区门店</td>
+										<td>1258</td>
+									</tr>
+									<tr>
+										<td>ML1257</td>
+										<td>成都地区门店</td>
+										<td>1258</td>
+									</tr>
+									<tr>
+										<td>ML1257</td>
+										<td>成都地区门店</td>
+										<td>1258</td>
+									</tr>
+									<tr>
+										<td>ML1257</td>
+										<td>成都地区门店</td>
+										<td>1258</td>
+									</tr>
+									<tr>
+										<td>ML1257</td>
+										<td>成都地区门店</td>
+										<td>1258</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="yello-btn" data-dismiss="modal">复制</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 创建门店列表 -->
+	<div class="modal fade global-modal filter-shop-modal" id="myModal_12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button class="close" data-dismiss="modal">关</button>
+					<h3 class="title">创建门店列表</h3>
+					<p class="des">请输入列表名称并设定门店筛选条件。 若您不设定任何条件，则列表对所有成员生效。 您也可以导入一个现有的门店列表，在其基础上进行</p>
+					<!-- 表单 -->
+					<form class="created-form">
+						<div class="change-template create-people err">
+							<strong>
+								<i class="must">*</i>列表名称：</strong>
+							<input type="text" class="list-name form-control">
+							<div class="message" style="margin-left: 88px;">错误提示内容</div>
+						</div>
+						<div class="content produc-group-list clearfix">
+							<!-- 表单填写不变内容 -->
+							<div class="left">
+								<h3 class="header-title">设定门店筛选规则</h3>
+								<div id="qb_customer" class="query_view"></div>
+							</div>
+							<div class="right">
+								<h4 class="smail-title">已选门店（354）</h4>
+								<div class="similarity-table">
+									<!-- 如果需要选中状态给里面的span添加marketing-btn -->
+									<div class="thead">
+										<div style="width:150px" class="th">
+											<span>门店编号</span>
+										</div>
+										<div class="th" style="width:185px">
+											<span class="marketing-btn">店铺名称</span>
+										</div>
+									</div>
+									<div class="tbody">
+										<table class="table table-hover table-striped">
+											<tbody>
+												<tr>
+													<td>1400002</td>
+													<td>佛山兴华分店</td>
+												</tr>
+												<tr>
+													<td>1400002</td>
+													<td>佛山兴华分店</td>
+												</tr>
+												<tr>
+													<td>1400002</td>
+													<td>佛山兴华分店</td>
+												</tr>
+												<tr>
+													<td>1400002</td>
+													<td>佛山兴华分店</td>
+												</tr>
+												<tr>
+													<td>1400002</td>
+													<td>佛山兴华分店</td>
+												</tr>
+												<tr>
+													<td>1400002</td>
+													<td>佛山兴华分店</td>
+												</tr>
+												<tr>
+													<td>1400002</td>
+													<td>佛山兴华分店</td>
+												</tr>
+												<tr>
+													<td>1400002</td>
+													<td>佛山兴华分店</td>
+												</tr>
+												<tr>
+													<td>1400002</td>
+													<td>佛山兴华分店</td>
+												</tr>
+												<tr>
+													<td>1400002</td>
+													<td>佛山兴华分店</td>
+												</tr>
+												<tr>
+													<td>1400002</td>
+													<td>佛山兴华分店</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- 表单填写内容end -->
+						</div>
+						<!-- 提交按钮模块 -->
+						<!-- 可提交状态去掉disabled 类名-->
+						<div class="produc-group-footer">
+							<a class="prev" href="javascript:history.go(-1)">上一步</a>
+							<!-- 可以创建的时候去掉 desable-->
+							<button class="created desable" type="button">确认创建</button>
+							<button class="look-shop" type="button">查看选中的商店</button>
+						</div>
+
+					</form>
+					<!-- 表单 end-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 门店筛选弹窗 -->
+	<div class="modal fade global-modal filter-shop-modal" id="myModal_11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body clearfix">
+					<button class="close" data-dismiss="modal">关</button>
+					<h3 class="title">[SL1245 华东地区门店] 列表 </h3>
+					<h4 class="smail-title">筛选门店</h4>
+					<div class="left">
+						<div class="echelon echelon-box">
+							<div class="head">和</div>
+							<!-- 需要嵌套一行的复制ladder就可以了 -->
+							<div class="ladder">
+								<span class="first">APP系统平台标签</span>
+								<span class="two">等于</span>
+								<span class="three">Android</span>
+							</div>
+							<div class="ladder">
+								<span class="first">APP系统平台标签</span>
+								<span class="two">等于</span>
+								<span class="three">Android</span>
+							</div>
+							<!-- 需要嵌套整体的复制echelon就可以了 -->
+							<div class="echelon">
+								<div class="head">或</div>
+								<div class="ladder">
+									<span class="first">总交易金额</span>
+									<span class="two">等于</span>
+									<span class="three">100</span>
+								</div>
+								<div class="echelon">
+									<div class="head">和</div>
+									<div class="ladder">
+										<span class="first">APP系统平台标签</span>
+										<span class="two">等于</span>
+										<span class="three">Android</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<h4 class="smail-title">筛选门店</h4>
+						<div class="similarity-table">
+							<!-- 如果需要选中状态给里面的span添加marketing-btn -->
+							<div class="thead">
+								<div style="width:150px" class="th">
+									<span>门店编号</span>
+								</div>
+								<div class="th">
+									<span class="marketing-btn">店铺名称</span>
+								</div>
+							</div>
+							<div class="tbody">
+								<table class="table table-hover table-striped">
+									<tbody>
+										<tr>
+											<td>1400002</td>
+											<td>佛山兴华分店</td>
+										</tr>
+										<tr>
+											<td>1400002</td>
+											<td>佛山兴华分店</td>
+										</tr>
+										<tr>
+											<td>1400002</td>
+											<td>佛山兴华分店</td>
+										</tr>
+										<tr>
+											<td>1400002</td>
+											<td>佛山兴华分店</td>
+										</tr>
+										<tr>
+											<td>1400002</td>
+											<td>佛山兴华分店</td>
+										</tr>
+										<tr>
+											<td>1400002</td>
+											<td>佛山兴华分店</td>
+										</tr>
+										<tr>
+											<td>1400002</td>
+											<td>佛山兴华分店</td>
+										</tr>
+										<tr>
+											<td>1400002</td>
+											<td>佛山兴华分店</td>
+										</tr>
+										<tr>
+											<td>1400002</td>
+											<td>佛山兴华分店</td>
+										</tr>
+										<tr>
+											<td>1400002</td>
+											<td>佛山兴华分店</td>
+										</tr>
+										<tr>
+											<td>1400002</td>
+											<td>佛山兴华分店</td>
+										</tr>
+										<tr>
+											<td>1400002</td>
+											<td>佛山兴华分店</td>
+										</tr>
+										<tr>
+											<td>1400002</td>
+											<td>佛山兴华分店</td>
+										</tr>
+										<tr>
+											<td>1400002</td>
+											<td>佛山兴华分店</td>
+										</tr>
+										<tr>
+											<td>1400002</td>
+											<td>佛山兴华分店</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default close-btn" data-dismiss="modal">取消</button>
+					<button type="button" class="yello-btn" data-dismiss="modal">确认选择</button>
+					<button type="button" class="btn btn-default close-btn" data-dismiss="modal">关闭</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+</body>
+<script src="../../JqQueryBuilder/jquery_1.10.2.min.js"></script>
+<script src="../../JqQueryBuilder/doT.min.js"></script>
+<script src="../../JqQueryBuilder/jQuery.extendext.min.js"></script>
+<script src="../../JqQueryBuilder/query_builder.min.js"></script>
+<script src="../../JqQueryBuilder/query_builder.zh_CN.js"></script>
+<script src="../../JqQueryBuilder/ManageProduct.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/createCoupon.js"></script>
+
+</html>

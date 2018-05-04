@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>创建优惠券规则</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/timepicker/bootstrap-datetimepicker.min.css">
+	<link href="../css/timepicker/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" media="all" href="../css/timepicker/daterangepicker-bs3.css" />
+	<link rel="stylesheet" type="text/css" href="../css/publick.css">
+	<link rel="stylesheet" type="text/css" href="../css/home.css">
+	<script src="../JqQueryBuilder/jquery_1.10.2.min.js"></script>
+</head>
+
+<body>
+	<!-- 公共头部1 -->
+	<div class="global-top-navs">
+		<div class="main">
+			<ul class="right-nav">
+				<li class="active activity-btn">营销活动创建</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+			</ul>
+			<div class="left-nav">
+				正在创建活动 [
+				<span>- - - -</span> ]
+				<div class="time">
+					<em>起止日期：</em>
+					<span> - - - -. - - . - - ~ - - - - . - - . - - </span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 公共头部 end -->
+
+	<!-- 主要内容开始创建规则 -->
+	<div class="containers created-rule" id="container">
+		<h3 class="title">第1步 营销活动创建</h3>
+		<p class="des">您需要在此设定营销活动的整体信息，您可以手动填写资料创建一个全新的营销活动规则，也可以在一个已有营销活动规则的基础上修改。</p>
+		<!-- 表单 -->
+		<form class="created-form marketing-created">
+			<div class="main-wrap">
+				<!-- 表单填写不变内容 -->
+				<div class="main-right">
+					<span class="marketing-icon"></span>
+					<p class="des">复制已有的营销活动信息，在其基础上修改</p>
+					<button class="copy-btn" data-toggle="modal" data-target="#activity_pop" type="button">复制已有营销活动</button>
+				</div>
+				<ul class="main-left">
+					<!-- 错误梯形li添加err类名就可以了 -->
+					<li class="activity-name">
+						<label>
+							<strong>活动名称： </strong>(已输入 0/100字，活动名称建议使用“时间_门店_POD类型_活动规则描述)</label>
+						<textarea>2018年1月_上海_P_注册会员送巨无霸第二件半价优惠券</textarea>
+						<div class="message">活动名称不能为空</div>
+					</li>
+					<li class="times err">
+						<label>
+							<strong>开始日期：</strong>
+						</label>
+						<div class="input-append">
+							<input class="input-btn" type="text" id="datetime_start" value="2018-03-30-03:20">
+							<span class="glyphicon glyphicon-calendar"></span>
+						</div>
+						<div class="message">开始日期不能晚于结束日期</div>
+					</li>
+					<li class="times">
+						<label>
+							<strong>结束日期：</strong>
+						</label>
+						<div class="input-append">
+							<input class="input-btn" type="text" id="datetime_end" value="2018-03-30-03:20">
+							<span class="glyphicon glyphicon-calendar"></span>
+						</div>
+						<div class="message">结束日期不能早于开始日期</div>
+					</li>
+				</ul>
+				<!-- 表单填写内容end -->
+			</div>
+			<!-- 提交按钮模块 -->
+			<!-- 可提交状态去掉disabled 类名-->
+			<button class="created-people-submit disabled" disabled="">下一步</button>
+		</form>
+		<!-- 表单 end-->
+	</div>
+	<!-- 主要内容开始 创建规则end -->
+	<!-- 第四步弹窗内容 -->
+	<!-- <div class="mark" id="mark"></div>
+	<div class="globle-pop activity-pop" id="activity_pop">
+		
+	</div> -->
+	<div class="modal fade global-modal globle-pop activity-pop" id="activity_pop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body clearfix">
+					<button class="close" data-dismiss="modal">关</button>
+					<div class="content">
+						<div class="head-filter">
+							<h3 class="title">共有 376 个营销活动记录</h3>
+							<label>奖励类型：</label>
+							<div class="select-imitate">
+								<ul class="dropdown-nav">
+									<!-- data-radiovalue 相当于单选框的value -->
+									<li class="select-item-radio selected" data-radiovalue="0">积分</li>
+									<li class="select-item-radio" data-radiovalue="1">优惠卷</li>
+								</ul>
+								<span class="dropdown-toggle">积分</span>
+								<!-- 选中的value传递到隐藏域里面 -->
+								<input type="hidden" value="" class="radio-value">
+								<span class="right-btn">
+									<i class="up">上</i>
+									<i class="down">下</i>
+								</span>
+							</div>
+							<input type="text" class="search-content" placeholder="搜索规则名称/活动ID/活动名称...">
+							<label>设置时间范围：</label>
+							<div class="datetimepicker-box clearfix">
+								<input type="text" value="2018-04-19 - 2018-04-19" class="text-input start_time">
+							</div>
+							<button type="submit" class="search-btn">搜索</button>
+						</div>
+						<div class="similarity-table">
+							<!-- 如果需要选中状态给里面的span添加marketing-btn -->
+							<div class="thead">
+								<div style="width:110px" class="th">
+									<span>ID</span>
+								</div>
+								<div style="width:272px" class="th">
+									<span class="marketing-btn">营销活动名称</span>
+								</div>
+								<div style="width:145px" class="th">
+									<span>奖励类型</span>
+								</div>
+								<div style="width:258px" class="th">
+									<span>规则名称</span>
+								</div>
+								<div style="width:320px" class="th">
+									<span>活动开始</span>/结束时间</div>
+								<div class="th">状态</div>
+							</div>
+							<div class="tbody">
+								<table class="table table-hover table-striped">
+									<tbody>
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state primary">编辑</td>
+										</tr>
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state primary">编辑</td>
+										</tr>
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state">复制</td>
+										</tr>
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state">复制</td>
+										</tr>
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state">复制</td>
+										</tr>
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state">复制</td>
+										</tr>
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state">复制</td>
+										</tr>
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state primary">编辑</td>
+										</tr>
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state primary">编辑</td>
+										</tr>
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state primary">编辑</td>
+										</tr>
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state primary">编辑</td>
+										</tr>
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state primary">编辑</td>
+										</tr>
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state primary">编辑</td>
+										</tr>
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state primary">编辑</td>
+										</tr>
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state primary">编辑</td>
+										</tr>
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state primary">编辑</td>
+										</tr>
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state primary">编辑</td>
+										</tr>
+
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state primary">编辑</td>
+										</tr>
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state primary">编辑</td>
+										</tr>
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state primary">编辑</td>
+										</tr>
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state primary">编辑</td>
+										</tr>
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state primary">编辑</td>
+										</tr>
+
+										<tr>
+											<td>CP5643</td>
+											<td>2018年1月_所有门店_P_首单...</td>
+											<td>积分</td>
+											<td>满50元送20积分</td>
+
+											<td>2018.02.28 - 09:00 至 2019.02.28 - 21:00</td>
+											<td class="state primary">编辑</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="global-page-two clearfix">
+							<div class="page-filter">
+								<span class="lable" style="margin-right: 10px">共1000条</span>
+								<span class="lable">显示条数：</span>
+								<a href="" class="active">25</a>
+								<a href="">50</a>
+								<a href="">100</a>
+							</div>
+							<div class="page-box">
+								<a href="#" aria-label="more-prev">
+									<span aria-hidden="true">&lt;&lt;</span>
+								</a>
+								<a href="#" aria-label="prev">
+									<span aria-hidden="true">&lt;</span>
+								</a>
+								<a href="#" class="active">1</a>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#" aria-label="next">
+									<span aria-hidden="true">&gt;</span>
+								</a>
+								<a href="#" aria-label="more-next">
+									<span aria-hidden="true">&gt;&gt;</span>
+								</a>
+							</div>
+						</div>
+						<div class="btn-footer">
+							<button class="copy-btn">复制</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/timepicker/moment.js"></script>
+<script type="text/javascript" src="../js/timepicker/daterangepicker.js"></script>
+<script src="../js/createCoupon.js"></script>
+
+</html>

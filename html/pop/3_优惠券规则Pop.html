@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>offer弹窗</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<link rel="stylesheet" href="../../css/bootstrap.css">
+	<link href="../../JqQueryBuilder/query_builder.default.min.css" rel="stylesheet" />
+
+	<link rel="stylesheet" type="text/css" href="../../css/publick.css">
+	<link rel="stylesheet" type="text/css" href="../../css/home.css">
+</head>
+
+<body>
+	<div class="ceshi-btn">
+		<button class="btn btn-primary" data-toggle="modal" data-target="#myModal_6">2套用或创建优惠券规则_提示</button>
+		<button class="btn btn-primary" data-toggle="modal" data-target="#myModal_7">5确认优惠券规则</button>
+		<button class="btn btn-primary" data-toggle="modal" data-target="#myModal_4">4创建商品组列表</button>
+		<button class="btn btn-info" data-toggle="modal" data-target="#myModal_8">6确认优惠券规则_导入</button>
+		<button class="btn btn-info" data-toggle="modal" data-target="#myModal_9">7商品组详情</button>
+	</div>
+	<!-- 2套用或创建优惠券规则_提示 -->
+	<div class="modal fade global-modal" id="myModal_6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button class="close" data-dismiss="modal">关</button>
+					<h3 class="title">选择已有的优惠券规则进行复制</h3>
+					<form action="" class="filter-forms">
+						<label>类型：</label>
+						<div class="select-imitate changeTemplate" id="">
+							<ul class="dropdown-nav">
+								<li class="select-item-radio" data-viewid="2">类型1</li>
+								<li class="select-item-radio" data-viewid="3">类型2</li>
+							</ul>
+							<span class="dropdown-toggle">类型1</span>
+							<span class="right-btn">
+								<i class="up">上</i>
+								<i class="down">下</i>
+							</span>
+						</div>
+						<div class="right">
+							<input type="text" placeholder="搜索ID/规则名称/产品编码/产品名称">
+							<button type="search" class="yello-btn">搜索</button>
+						</div>
+					</form>
+					<div class="similarity-table model-table">
+						<div class="thead">
+							<div style="width:110px" class="th">
+								<span>id</span>
+							</div>
+							<!-- 如果需要有选中效果的话 就在div里面的span加 class为marketing-btn -->
+							<div style="width:520px" class="th">
+								<span class="marketing-btn">优惠券规则名称</span>
+							</div>
+							<div style="width:220px" class="th">
+								<span>Template</span>
+							</div>
+							<div class="th">
+								<span>优惠券规则描述</span>
+							</div>
+						</div>
+						<div class="tbody">
+							<table class="table table-hover table-striped" cellspacing="0" cellpadding="0" border="0">
+								<tbody>
+									<tr>
+										<td>CP5643</td>
+										<td>
+											<div class="figure">
+												<img src="http://temp.im/72x55" alt="">
+											</div>
+											<div class="content"> 2018年1月份注册会员送50积分</div>
+										</td>
+										<td>BOGO</td>
+										<td>巨无霸买一送一</td>
+									</tr>
+									<tr>
+										<td>CP5643</td>
+										<td>
+											<div class="figure">
+												<img src="http://temp.im/72x55" alt="">
+											</div>
+											<div class="content"> 2018年1月份注册会员送50积分</div>
+										</td>
+										<td>BOGO</td>
+										<td>巨无霸买一送一</td>
+									</tr>
+									<tr>
+										<td>CP5643</td>
+										<td>
+											<div class="figure">
+												<img src="http://temp.im/72x55" alt="">
+											</div>
+											<div class="content"> 2018年1月份注册会员送50积分</div>
+										</td>
+										<td>BOGO</td>
+										<td>巨无霸买一送一</td>
+									</tr>
+									<tr>
+										<td>CP5643</td>
+										<td>
+											<div class="figure">
+												<img src="http://temp.im/72x55" alt="">
+											</div>
+											<div class="content"> 2018年1月份注册会员送50积分</div>
+										</td>
+										<td>BOGO</td>
+										<td>巨无霸买一送一</td>
+									</tr>
+									<tr>
+										<td>CP5643</td>
+										<td>
+											<div class="figure">
+												<img src="http://temp.im/72x55" alt="">
+											</div>
+											<div class="content"> 2018年1月份注册会员送50积分</div>
+										</td>
+										<td>BOGO</td>
+										<td>巨无霸买一送一</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default close-btn" data-dismiss="modal">关闭</button>
+						<button type="button" class="yello-btn" data-dismiss="modal">复制</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 4创建商品组列表 -->
+	<div class="modal fade global-modal filter-shop-modal" id="myModal_4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button class="close" data-dismiss="modal">关</button>
+					<h3 class="title">创建商品组</h3>
+					<p class="des">请输入商品组名称并设定条件。若您不设定任何条件，则对所有商品生效。</p>
+					<!-- 表单 -->
+					<form class="created-form">
+						<div class="change-template create-people err">
+							<strong>
+								<i class="must">*</i>商品组名称：</strong>
+							<input type="text" class="list-name form-control">
+							<div class="message">错误提示内容</div>
+						</div>
+						<div class="content produc-group-list clearfix">
+							<!-- 表单填写不变内容 -->
+							<div class="left">
+								<h3 class="header-title">设定商品组筛选规则</h3>
+								<div id="qb_customer" class="query_view"></div>
+							</div>
+							<div class="right">
+								<h4 class="smail-title">包含商品（<em class="yellow">0</em>）</h4>
+								<div class="similarity-table">
+									<!-- 如果需要选中状态给里面的span添加marketing-btn -->
+									<div class="thead">
+										<div style="width:150px" class="th">
+											<span>PLUCode</span>
+										</div>
+										<div class="th" style="width:185px">
+											<span class="marketing-btn">ProductName</span>
+										</div>
+									</div>
+									<div class="tbody">
+										<table class="table table-hover table-striped">
+											<tbody>
+												<tr>
+													<td>1400002</td>
+													<td>佛山兴华分店</td>
+												</tr>
+												<tr>
+													<td>1400002</td>
+													<td>佛山兴华分店</td>
+												</tr>
+												<tr>
+													<td>1400002</td>
+													<td>佛山兴华分店</td>
+												</tr>
+												<tr>
+													<td>1400002</td>
+													<td>佛山兴华分店</td>
+												</tr>
+												<tr>
+													<td>1400002</td>
+													<td>佛山兴华分店</td>
+												</tr>
+												<tr>
+													<td>1400002</td>
+													<td>佛山兴华分店</td>
+												</tr>
+												<tr>
+													<td>1400002</td>
+													<td>佛山兴华分店</td>
+												</tr>
+												<tr>
+													<td>1400002</td>
+													<td>佛山兴华分店</td>
+												</tr>
+												<tr>
+													<td>1400002</td>
+													<td>佛山兴华分店</td>
+												</tr>
+												<tr>
+													<td>1400002</td>
+													<td>佛山兴华分店</td>
+												</tr>
+												<tr>
+													<td>1400002</td>
+													<td>佛山兴华分店</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- 表单填写内容end -->
+						</div>
+						<!-- 提交按钮模块 -->
+						<!-- 可提交状态去掉disabled 类名-->
+						<div class="produc-group-footer">
+							<a class="prev" href="javascript:history.go(-1)">上一步</a>
+							<!-- 可以创建的时候去掉 desable-->
+							<button class="created desable" type="button">确认创建</button>
+							<button class="look-shop" type="button">查看选中的商店</button>
+						</div>
+
+					</form>
+					<!-- 表单 end-->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 5确认优惠券规则 -->
+	<div class="modal fade get-rule discount-rule" id="myModal_7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body clearfix">
+					<button class="close" data-dismiss="modal">关</button>
+					<h3 class="header-title">请确认优惠券规则</h3>
+					<div class="rule-main">
+						<div class="left">
+							<div class="shop-left">
+								<div class="cards">
+									<span class="phone">13296548121 ></span>
+									<span class="all-num">0 ></span>
+									<span class="use-num">0 ></span>
+								</div>
+								<div class="shop-cards product-card">
+									<div class="total" data-total="new">new</div>
+									<div class="project-img">
+										<img src="../../images/project-img.png" alt="">
+									</div>
+									<div class="content">
+										<h3 class="project-des">巨无霸第二件半价</h3>
+										<div class="name">巨无霸</div>
+										<div class="price"><em>￥25</em>原价￥20起</div>
+										<a href="" class="look-detail">查看详情</a>
+									</div>
+								</div>
+							</div>
+							<div class="shop-right">
+								<h4 class="name">巨无霸</h4>
+								<div class="shop-img">
+									<img src="http://temp.im/150x100" alt="">
+								</div>
+								<p>巨无霸每件5元<br>每天10：30后有效</p>
+								<div class="footer">
+									<a href="" >到店取餐</a>
+									<a href="" class="join">加入购物车</a>
+								</div>
+							</div>
+						</div>
+						<div class="right">
+							<ul>
+								<li>
+									<span class="name">TEMPLATE：</span>BOGO
+									<br> 购买[1] [<em class="yellow">巨无霸</em>] 送 [中杯可乐][减¥2]</li>
+								<li>
+									<span class="name">规则名称：</span>巨无霸第二件仅需5元</li>
+								<li>
+									<span class="name">规则描述：</span>麦当劳巨无霸第二件5元，本优惠券仅限每日上午10:30后使用。</li>
+								<li>
+									<span class="name">使用须知：</span>本优惠券一单只可使用一次，不可与其他优惠券叠加使用。</li>
+								<li>
+									<span class="name">可用时段：</span>每日10:30后使用</li>
+								<li>
+									<span class="name">标签：</span>折扣</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default close-btn" data-dismiss="modal">我要返回修改</button>
+					<button type="button" class="yello-btn" data-dismiss="modal">OK，准确无误</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 6确认优惠券规则_导入 -->
+	<div class="modal fade get-rule discount-rule" id="myModal_8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body clearfix">
+					<button class="close" data-dismiss="modal">关</button>
+					<h3 class="header-title">请确认优惠券规则</h3>
+					<div class="rule-main">
+						<div class="left">
+							<div class="shop-left">
+								<div class="cards">
+									<span class="phone">13296548121 ></span>
+									<span class="all-num">0 ></span>
+									<span class="use-num">0 ></span>
+								</div>
+								<!-- <div class="shop-cards">
+									<div class="shop-img">
+										<img src="http://temp.im/50x50" alt="">
+									</div>
+									<h4>咖啡经典娜菲卷哈哈哈哈哈哈哈哈</h4>
+									<h5>中北免费开大杯</h5>
+								</div> -->
+								<div class="shop-cards product-card">
+									<div class="total" data-total="new">new</div>
+									<div class="project-img">
+										<img src="../../images/project-img.png" alt="">
+									</div>
+									<div class="content">
+										<h3 class="project-des">巨无霸第二件半价</h3>
+										<div class="name">巨无霸</div>
+										<div class="price"><em>￥25</em>原价￥20起</div>
+										<a href="" class="look-detail">查看详情</a>
+									</div>
+								</div>
+							</div>
+							<div class="shop-right">
+								<h4 class="name">巨无霸</h4>
+								<div class="shop-img">
+									<img src="https://ccportaluat.crm.mcdonalds.com.cn/WebImageSrc/4fd64156b6e2447680f09a91b4d0e776.jpg" alt="">
+								</div>
+								<p>巨无霸每件5元<br>每天10：30后有效</p>
+								<div class="footer">
+									<a href="" >到店取餐</a>
+									<a href="" class="join">加入购物车</a>
+								</div>
+							</div>
+						</div>
+						<div class="right">
+							<ul>
+								<li>
+									<span class="name">TEMPLATE：</span>BOGO
+									<br> 购买[1] [<em class="yellow">巨无霸</em>] 送 [中杯可乐][减¥2]</li>
+								<li>
+									<span class="name">规则名称：</span>巨无霸第二件仅需5元</li>
+								<li>
+									<span class="name">规则描述：</span>麦当劳巨无霸第二件5元，本优惠券仅限每日上午10:30后使用。</li>
+								<li>
+									<span class="name">使用须知：</span>本优惠券一单只可使用一次，不可与其他优惠券叠加使用。</li>
+								<li>
+									<span class="name">可用时段：</span>每日10:30后使用</li>
+								<li>
+									<span class="name">标签：</span>折扣</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default close-btn" data-dismiss="modal">取消</button>
+					<button type="button" class="yello-btn" data-dismiss="modal">OK，准确无误</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 7商品组详情 -->
+	<div class="modal fade get-rule" id="myModal_9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button class="close" data-dismiss="modal">关</button>
+					<h3 class="header-title">[巨无霸]详情</h3>
+					<ul class="detail-list">
+						<li>1000 汉堡包</li>
+						<li>1100 巨无霸</li>
+						<li>1440 麦辣鸡腿堡</li>
+						<li>1673 辣牛煲</li>
+						<li>1000 汉堡包</li>
+						<li>1100 巨无霸</li>
+						<li>1440 麦辣</li>
+						<li>1000 汉堡包</li>
+						<li>1100 巨无霸</li>
+						<li>1440 麦辣</li>
+						<li>1000 汉堡包</li>
+						<li>1100 巨无霸</li>
+						<li>1440 麦辣</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default close-btn" data-dismiss="modal">关闭</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+<script src="../../JqQueryBuilder/jquery_1.10.2.min.js"></script>
+<script src="../../JqQueryBuilder/doT.min.js"></script>
+<script src="../../JqQueryBuilder/jQuery.extendext.min.js"></script>
+<script src="../../JqQueryBuilder/query_builder.min.js"></script>
+<script src="../../JqQueryBuilder/query_builder.zh_CN.js"></script>
+<script src="../../JqQueryBuilder/ManageProduct.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/createCoupon.js"></script>
+
+</html>

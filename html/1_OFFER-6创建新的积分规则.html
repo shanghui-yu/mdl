@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>创建优惠券规则</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/timepicker/bootstrap-datetimepicker.min.css">
+	<link href="../css/timepicker/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" media="all" href="../css/timepicker/daterangepicker-bs3.css" />
+	<link rel="stylesheet" type="text/css" href="../css/publick.css">
+	<link rel="stylesheet" type="text/css" href="../css/home.css">
+</head>
+
+<body>
+	<!-- 公共头部1 -->
+	<div class="global-top-navs">
+		<div class="main">
+			<ul class="right-nav">
+				<li>1</li>
+				<li class="active price">奖励配置</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>总览</li>
+			</ul>
+			<div class="left-nav">
+				正在创建活动 [
+				<span class="name">2018年1月_上海_P_注册1月_上海_P_注册.</span>]
+				<div class="time">
+					<em>起止日期：</em>
+					<span>2018.02.22 - 06:30</span> ~
+					<span>2019.02.22 - 06:30</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 公共头部 end -->
+
+	<!-- 奖励配置 -->
+	<div class="containers created-rule" id="container">
+		<h3 class="title">第2步 通过交易奖励积分</h3>
+		<p class="des">现在请您制定您的积分规则，您可以创建新的积分规则，也可以从右侧表格中选择一个已有的积分规则套用。</p>
+		<button class="copy-btn">复制已有积分规则并编辑</button>
+		<!-- 奖励积分具体内容 -->
+		<form class="main-wraper trade-new-integral clearfix">
+			<!-- 选择现有积分 错误提示的时候只需要给class为list的类名加上err 然后在err-msg里面添加错误文案就可以-->
+			<div class="left">
+				<!-- 这个添加了err所以回显示错误提示 默认去掉err -->
+				<div class="list err">
+					<label>
+						<b>规则名称</b> (已输入 0/12字)</label>
+					<input type="text" maxlength="12">
+					<div class="err-msg">错误文案</div>
+				</div>
+				<div class="list">
+					<label>
+						<b>规则描述</b> (已输入 0/9字)</label>
+					<textarea name="" id="" cols="30" rows="10" maxlength="9"></textarea>
+					<div class="err-msg">错误文案</div>
+				</div>
+				<div class="list">
+					<label>
+						<b>上传积分图片：</b>
+					</label>
+					<div class="figure">
+						<img src="http://temp.im/150x150" alt="">
+					</div>
+					<div class="upload-img">
+						<input type="file">
+						<span class="moni-btn">上传图片</span>
+					</div>
+					<div class="err-msg">错误文案</div>
+				</div>
+			</div>
+			<!-- 手动创建一个新的积分规则 -->
+			<div class="right">
+				<div class="filter-rule">
+					<label class="name">规则类型：</label>
+					<div class="select-imitate changeTemplate" id="">
+						<ul class="dropdown-nav">
+							<li class="select-item-radio selected" data-viewid="1">S-单品标准</li>
+							<li class="select-item-radio" data-viewid="2">A-整单满额</li>
+							<li class="select-item-radio" data-viewid="3">B-捆绑套餐</li>
+						</ul>
+						<span class="dropdown-toggle">S-单品标准</span>
+						<span class="right-btn">
+							<i class="up">上</i>
+							<i class="down">下</i>
+						</span>
+					</div>
+				</div>
+				<!-- S-单品标准 -->
+				<ul class="s-product">
+					<li class="list" data-changeId="1">
+						<label class="name">商品组：</label>
+						<span class="product">甜品</span>
+						<div class="err-msg">错误文案</div>
+					</li>
+					<li class="list" data-changeId="3" style="display: none">
+						<label class="name">商品组：</label>
+						<div class="shop-div">
+							<span class="product">甜品</span>
+							<input type="text">
+							<span class="delete"></span>
+						</div>
+						<button type="button" class="product add" id="add_shop_group">添加商品组</button>
+						<div class="err-msg">错误文案</div>
+					</li>
+					<li class="list" data-changeId="2" style="display: none">
+						<label class="name">金额达到：</label>
+						<input type="text" class="text-input">
+						<div class="err-msg">错误文案</div>
+					</li>
+					<li class="list" data-changeId="1">
+						<label class="name">数量达到：</label>
+						<input type="text" class="text-input">
+						<div class="err-msg">错误文案</div>
+					</li>
+					<li class="list">
+						<label class="name">积分类型：</label>
+						<div class="select-imitate" id="changeTemplate">
+							<ul class="dropdown-nav">
+								<li class="select-item-radio selected">积分</li>
+								<li class="select-item-radio">积分1</li>
+							</ul>
+							<span class="dropdown-toggle">积分</span>
+							<span class="right-btn">
+								<i class="up">上</i>
+								<i class="down">下</i>
+							</span>
+						</div>
+						<div class="err-msg">错误文案</div>
+					</li>
+					<li class="list">
+						<label class="name">赠送方式：</label>
+						<div class="select-imitate" id="changeTemplate">
+							<ul class="dropdown-nav">
+								<li class="select-item-radio selected">倍数</li>
+								<li class="select-item-radio">倍数1</li>
+							</ul>
+							<span class="dropdown-toggle">倍数</span>
+							<span class="right-btn">
+								<i class="up">上</i>
+								<i class="down">下</i>
+							</span>
+						</div>
+						<div class="err-msg">错误文案</div>
+					</li>
+					<li class="list">
+						<label class="name">奖励额度：</label>
+						<input type="text" class="text-input">
+						<div class="err-msg">错误文案</div>
+					</li>
+					<li class="list" data-changeId="2" style="display: none">
+						<label class="name">发放规则：</label>
+						<div class="select-imitate" id="changeTemplate">
+							<ul class="dropdown-nav">
+								<li class="select-item-radio selected">固定日期</li>
+								<li class="select-item-radio">3天后</li>
+							</ul>
+							<span class="dropdown-toggle">固定日期</span>
+							<span class="right-btn">
+								<i class="up">上</i>
+								<i class="down">下</i>
+							</span>
+						</div>
+						<div class="err-msg">错误文案</div>
+					</li>
+					<li class="list">
+						<label class="name">积分有效期：</label>
+						<div class="select-imitate" id="changeTemplate">
+							<ul class="dropdown-nav">
+								<li class="select-item-radio selected">固定日期</li>
+								<li class="select-item-radio">3天后</li>
+							</ul>
+							<span class="dropdown-toggle">固定日期</span>
+							<span class="right-btn">
+								<i class="up">上</i>
+								<i class="down">下</i>
+							</span>
+						</div>
+						<div class="input-append">
+							<input type="text" value="2018-03-05" class="select-time dataTimes">
+							<span class="glyphicon glyphicon-calendar"></span>
+						</div>
+						<div class="err-msg">错误文案</div>
+					</li>
+				</ul>
+				<div class="list checkbox">
+					<label for="repeat" class="repeat">
+						<input type="checkbox" name="useType" id="repeat">
+						<span></span>
+						可重复参与
+					</label>
+					<label for="overlying" class="overlying">
+						<input type="checkbox" name="useType" id="overlying">
+						<span></span>
+						可叠加使用
+					</label>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="main-wraper new-integral-footer">
+		<a class="prev" href="javascript:history.go(-1)">上一步</a>
+		<a class="next" href="">下一步</a>
+	</div>
+</body>
+<script src="../JqQueryBuilder/jquery_1.10.2.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/timepicker/moment.js"></script>
+<script type="text/javascript" src="../js/timepicker/daterangepicker.js"></script>
+<script src="../js/createCoupon.js"></script>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>offer弹窗</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<link rel="stylesheet" href="../../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../css/publick.css">
+	<link rel="stylesheet" type="text/css" href="../../css/home.css">
+</head>
+
+<body>
+	<div class="ceshi-btn">
+		<button class="btn btn-primary" data-toggle="modal" data-target="#myModal_10">创建门店列表弹窗</button>
+		<button class="btn btn-primary" data-toggle="modal" data-target="#myModal_11">3成员列表确认(手动创建)</button>
+		<button class="btn btn-info" data-toggle="modal" data-target="#myModal_12">4成员列表确认(选择模版)</button>
+	</div>
+	<!-- 创建门店列表弹窗 -->
+	<div class="modal fade global-modal" id="myModal_10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button class="close" data-dismiss="modal">关</button>
+					<h3 class="title">选择已有的优惠券规则进行复制</h3>
+					<form action="" class="filter-forms">
+						<div class="right">
+							<input type="text" placeholder="输入名称搜索...">
+							<button type="search" class="yello-btn">搜索</button>
+						</div>
+					</form>
+					<div class="similarity-table member-table">
+						<div class="thead">
+							<div style="width:240px" class="th">
+								<span>ID</span>
+							</div>
+							<div style="width:575px" class="th">
+								<span class="marketing-btn">成员列表名称</span>
+							</div>
+							<div class="th">
+								<span>含新注册会员</span>
+							</div>
+						</div>
+						<div class="tbody">
+							<table class="table table-hover table-striped" cellspacing="0" cellpadding="0" border="0">
+								<tbody>
+									<tr>
+										<td>ML1257</td>
+										<td>上海地区成员</td>
+										<td>否</td>
+									</tr>
+									<tr>
+										<td>ML1257</td>
+										<td>上海地区成员</td>
+										<td>是</td>
+									</tr>
+									<tr>
+										<td>ML1257</td>
+										<td>上海地区成员</td>
+										<td>是</td>
+									</tr>
+									<tr>
+										<td>ML1257</td>
+										<td>上海地区成员</td>
+										<td>是</td>
+									</tr>
+									<tr>
+										<td>ML1257</td>
+										<td>上海地区成员</td>
+										<td>是</td>
+									</tr>
+									<tr>
+										<td>ML1257</td>
+										<td>上海地区成员</td>
+										<td>是</td>
+									</tr>
+									<tr>
+										<td>ML1257</td>
+										<td>上海地区成员</td>
+										<td>是</td>
+									</tr>
+									<tr>
+										<td>ML1257</td>
+										<td>上海地区成员</td>
+										<td>是</td>
+									</tr>
+									<tr>
+										<td>ML1257</td>
+										<td>上海地区成员</td>
+										<td>是</td>
+									</tr>
+									<tr>
+										<td>ML1257</td>
+										<td>上海地区成员</td>
+										<td>是</td>
+									</tr>
+									<tr>
+										<td>ML1257</td>
+										<td>上海地区成员</td>
+										<td>是</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="yello-btn" data-dismiss="modal">复制</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 3成员列表确认 -->
+	<div class="modal fade member-modal global-modal" id="myModal_11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body clearfix">
+					<button class="close" data-dismiss="modal">关</button>
+					<h3 class="title">[
+						<em>ML1525 上海地区成员</em>] 列表[
+						<em>包含新注册会员</em>]</h3>
+					<h4 class="smail-title">筛选门店</h4>
+					<div class="echelon echelon-box">
+						<div class="head">和</div>
+						<!-- 需要嵌套一行的复制ladder就可以了 -->
+						<div class="ladder">
+							<span class="first">APP系统平台标签</span>
+							<span class="two">等于</span>
+							<span class="three">Android</span>
+						</div>
+						<div class="ladder">
+							<span class="first">APP系统平台标签</span>
+							<span class="two">等于</span>
+							<span class="three">Android</span>
+						</div>
+						<!-- 需要嵌套整体的复制echelon就可以了 -->
+						<div class="echelon">
+							<div class="head">或</div>
+							<div class="ladder">
+								<span class="first">总交易金额</span>
+								<span class="two">等于</span>
+								<span class="three">100</span>
+							</div>
+							<div class="echelon">
+								<div class="head">和</div>
+								<div class="ladder">
+									<span class="first">APP系统平台标签</span>
+									<span class="two">等于</span>
+									<span class="three">Android</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default close-btn" data-dismiss="modal">我要返回修改</button>
+					<button type="button" class="yello-btn" data-dismiss="modal">OK，准确无误</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 4成员列表确认 -->
+	<div class="modal fade member-modal global-modal" id="myModal_12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body clearfix">
+					<button class="close" data-dismiss="modal">关</button>
+					<h3 class="title">[
+						<em>ML1525 上海地区成员</em>] 列表[
+						<em>包含新注册会员</em>]</h3>
+					<h4 class="smail-title">筛选门店</h4>
+					<div class="echelon echelon-box">
+						<div class="head">和</div>
+						<!-- 需要嵌套一行的复制ladder就可以了 -->
+						<div class="ladder">
+							<span class="first">APP系统平台标签</span>
+							<span class="two">等于</span>
+							<span class="three">Android</span>
+						</div>
+						<div class="ladder">
+							<span class="first">APP系统平台标签</span>
+							<span class="two">等于</span>
+							<span class="three">Android</span>
+						</div>
+						<div class="ladder">
+							<span class="first">APP系统平台标签</span>
+							<span class="two">等于</span>
+							<span class="three">Android</span>
+						</div>
+						<!-- 需要嵌套整体的复制echelon就可以了 -->
+						<div class="echelon">
+							<div class="head">或</div>
+							<div class="ladder">
+								<span class="first">总交易金额</span>
+								<span class="two">等于</span>
+								<span class="three">100</span>
+							</div>
+							<div class="echelon">
+								<div class="head">和</div>
+								<div class="ladder">
+									<span class="first">APP系统平台标签</span>
+									<span class="two">等于</span>
+									<span class="three">Android</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default close-btn" data-dismiss="modal">取消</button>
+					<button type="button" class="yello-btn" data-dismiss="modal">确认选择</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+<script src="../../JqQueryBuilder/jquery_1.10.2.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/createCoupon.js"></script>
+
+</html>
