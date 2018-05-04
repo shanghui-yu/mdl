@@ -3,7 +3,7 @@
 @author: yushanghui
 @update: 20180320
 */
-
+ 
 /*创建优惠券主体内容*/
 .containers{width:1295px;margin:0 auto;padding:0;}
 .created-form .content{max-height:calc(100vh - 336px);overflow-y:scroll;}
