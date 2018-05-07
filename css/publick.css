@@ -165,6 +165,7 @@ table .state{cursor:pointer;}
 .global-modal .modal-dialog,.global-modal .modal-content{width:1150px;}
 .globle-pop .modal-dialog,.globle-pop .modal-content{width:1295px;}
 .global-modal .title{line-height:44px;font-size:34px;padding:5px 0 15px;}
+.modal-body{padding: 40px;}
 .global-modal .filter-forms{margin-bottom:20px;}
 .global-modal .filter-forms .right{float:right;}
 .global-modal .filter-forms input{display:inline-block;font-size:16px;padding:0 10px;line-height:39px;border:1px solid #ddd;width:285px;margin:0 15px;height:39px;}
@@ -186,7 +187,7 @@ table .state{cursor:pointer;}
 .get-rule .rule-main{float:left;}
 .get-rule .rule-main li{max-width:435px;font-size:16px;line-height:26px;margin-bottom:10px;padding-left:125px;position:relative;}
 .get-rule .rule-main li .name{width:100px;position:absolute;left:0;top:0;text-align:right;display:inline-block;font-weight:bold;}
-.get-rule .product-detail{float:left;margin-left:60px;height:334px;position:relative;width:315px;font-size:16px;padding-left:20px;}
+.get-rule .product-detail{float:left;margin-left:20px;height:334px;position:relative;width:315px;font-size:16px;padding-left:20px;}
 .get-rule .product-detail >h3{font-weight:bold;margin-bottom:5px;font-size:16px;}
 .get-rule .product-detail ul{overflow:auto;max-height:270px;}
 .get-rule .product-detail ul li{line-height:32px;color:#999999;padding:0 10px 0 75px;position:relative;}
@@ -197,7 +198,7 @@ table .state{cursor:pointer;}
 .get-rule .header-title{font-size:34px;line-height:44px;padding:5px 0 35px;}
 .discount-rule .left,.discount-rule .right{float:left;}
 .get-rule .modal-body{padding-bottom:60px;}
-.discount-rule .left{padding:0 35px 0 15px;max-width:475px;position:relative;}
+.discount-rule .left{padding:0 16px 0 0px;max-width:440px;position:relative;}
 .discount-rule .left .shop-left{display:inline-block;background:url('../images/phoner1.png') no-repeat;background-size:contain;position:relative;width:200px;height:408px;overflow:hidden;}
 .discount-rule .left .cards{cursor:pointer;margin:73px auto 0;width:152px;height:94px;background:url('../images/shop-card.png') no-repeat;background-size:contain;position:relative;}
 .discount-rule .left .cards span{font-size:12px;color:#c28019;}
