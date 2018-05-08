@@ -173,7 +173,7 @@
 .reward-footer a{height:39px;font-size:16px;line-height:39px;text-align:center;display:inline-block;}
 .reward-footer .prev{border:1px solid #dbdbdb;width:155px;background:#fff;margin-right:16px;}
 .reward-footer .prev:hover{background:#dbdbdb;}
-.reward-footer .skip{width:220px;background:#ffca03;margin-left:320px;}
+.reward-footer .skip{width:155px;background:#ffca03;margin-left:320px;}
 .reward-footer .skip:hover{background:#cca200;}
 
 /*无需交易获取积分*/
@@ -269,7 +269,7 @@
 .new-integral-footer{margin-top:40px;}
 .new-integral-footer .prev:hover{background:#dbdbdb}
 .new-integral-footer .prev,.new-integral-footer .next{float:left;display:inline-block;width:156px;height:38px;background:#fff;border:1px solid #dbdbdb;font-size:14px;text-align:center;line-height:38px;}
-.new-integral-footer .next{border:none;background:rgb(255,202,3);height:38px;line-height:38px;margin-left:10px;color:#333;cursor:pointer;width:225px;}
+.new-integral-footer .next{border:none;background:rgb(255,202,3);height:38px;line-height:38px;margin-left:10px;color:#333;cursor:pointer;width:155px;}
 .created-news .main-wrap{margin-top:35px;}
 .created-news .main-wrap  .input-text{display:block;border:1px solid #dddddd;padding:0 10px;width:100%;height:38px;line-height:38px;font-size:14px;border-radius:4px;}
 .created-news .main-wrap .template-content{border:1px solid #dddddd;border-radius:4px;padding:10px 10px 0;font-size:14px;position:relative;background:#fff;}
@@ -329,7 +329,7 @@
 .radio-time .radio-btn input:checked+span{border:1px solid #ffca03;}
 .radio-time .radio-btn input:checked+span:after{content:'';background:#ffca03;font-size:12px;width: 70%;height: 70%;border-radius: 50%;;margin:1px;display: inline-block;}
 .set-discount-rule .trade-integral-rule{max-height:calc(100vh - 290px);overflow:auto;height:inherit;}
-.set-discount-footer .next{margin-left:260px;width:227px;}
+.set-discount-footer .next{margin-left:260px;width:155px;}
 .produc-group-list .left{width:890px;float:left;padding-right:30px;}
 .produc-group-list .right{width:350px;margin-left:30px;min-height:386px;float:left;position:relative;}
 .produc-group-list .right::before{position:absolute;left:-30px;top:48px;width:1px;background:#ddd;bottom:0;content:'';}
