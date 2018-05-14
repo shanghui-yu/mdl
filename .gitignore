@@ -1,5 +1,7 @@
-# Object file
-*.o
+node_modules/
+dist/*
 
-# Ada Library Information
-*.ali
+
+.wepycache
+.wepyignore
+.DS_Store
