@@ -54,6 +54,7 @@
 .table-striped > tbody > tr td .figure{float:left;width:72px;height:55px;border:1px solid #cccccc;margin-right:25px;overflow:hidden;}
 .table-striped > tbody > tr td .figure img{max-width:100%;}
 .table-striped > tbody > tr td .content{float:left;}
+.table-striped > tbody > tr td .content.des{width: 205px;display: -webkit-flex;display: flex;align-items: center;height: 55px;overflow: hidden;} 
 .table-striped > tbody > tr td .price{margin-bottom:5px;width:255px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
 
 
