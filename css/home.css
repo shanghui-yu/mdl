@@ -87,6 +87,50 @@
 #qb_customer .glyphicon-plus-sign:before{font-family:'mdl';content:'\e605'}
 #qb_customer .glyphicon-remove:before{font-family:'mdl';content:'\e639';}
 #qb_customer .form-control{border:1px solid #ffca00;padding:0 10px;}
+.selectize-control.single .selectize-input {
+	display: inline-block !important;
+	min-width: 90px !important;
+}
+.selectize-control.single .selectize-input .item{
+	min-width: 60px;
+	overflow: hidden;
+	display: inline-block;
+	line-height: 33px;
+	margin-right: 5px;
+}
+.selectize-control.single .selectize-input input{
+	max-width: 100% !important;
+	width: inherit !important;
+	float: right;
+	border: 1px solid #ffca00;
+	border-radius: 4px;
+	height: 33px;
+	margin-right: 5px;
+	padding: 0 10px;
+}
+.selectize-control.single .form-control {
+	width: 260px !important;
+	float: right;
+	margin-left: 5px;
+	position: relative;
+	top: inherit !important;
+	left: 0 !important;
+}
+.selectize-control.single .form-control .selectize-dropdown-content {
+	    position: absolute;
+	    left: 0px;
+	    top: 33px;
+	    height: 100px;
+	    z-index: 1000000;
+	    border: 1px solid #ffca00;
+	    overflow-y: scroll;
+	    background: #fff;
+}
+.selectize-control.single .form-control .selectize-dropdown-content >div{
+	height: 33px;
+	line-height: 33px;
+	padding: 0 10px;
+}
 .query-builder .rules-list>::after,.query-builder .rules-list>::before{border-width:0 0 1px 1px;}
 .query-builder .rules-list>::after{border:none;border-left:1px solid #ccc;}
 #qb_customer .rule-header{display:inline-block;}
